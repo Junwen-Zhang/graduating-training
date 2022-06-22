@@ -14,11 +14,12 @@ pymysql.install_as_MySQLdb()
 app = Flask(__name__)
 
 # url的格式为：数据库的协议：//用户名：密码@ip地址：端口号（默认可以不写）/数据库名
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.66.121:3306/house"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.66.121:3306/bilibili"
 # 动态追踪数据库的修改. 性能不好. 且未来版本中会移除. 目前只是为了解决控制台的提示才写的
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # 创建数据库的操作对象
 db = SQLAlchemy(app)
+
 
 
 from dbmodel.Animation_score import AnimationScore
@@ -106,22 +107,24 @@ def show100animation():
 
     return render_template("show100animation.html",fanjus=view_data)
 
-@app.route("/animationScore")
+@app.route('/animationScore')
 def animationScore():
+    # print('animationScore')
     return render_template("showAnimationScore.html")
 
-@app.route("/animationScoreAnalyse",methods=['Get'])
+@app.route('/animationScoreAnalyse',methods=['GET'])
 def animationScoreAnalyse():
+    print('animationScoreAnalyse')
     data = db.session.query(AnimationScore).all()
     view_data = {}
     view_data["x"] = []
     view_data["y"] = []
 
     def build_view_data(item):
-        view_data["x"].append(item.count)
-        view_data["y"].append(item.score)
+        view_data["y"].append(item.count)
+        view_data["x"].append(item.score)
     [build_view_data(item) for item in data]
-
+    print(view_data)
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 
 
