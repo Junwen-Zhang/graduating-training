@@ -7,6 +7,8 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
+    <content url="jar://$MODULE_DIR$/../../../../../../QQfiles/1602020796/FileRecv/spark-2.4.1-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip!/" />
+    <content url="jar://$MODULE_DIR$/../../../../../../QQfiles/1602020796/FileRecv/spark-2.4.1-bin-hadoop2.7/python/lib/pyspark.zip!/" />
     <orderEntry type="jdk" jdkName="Python 3.6 (mydouban)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
@@ -14,7 +16,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../douban_flask\templates" />
+        <option value="$MODULE_DIR$/templates" />
       </list>
     </option>
   </component>

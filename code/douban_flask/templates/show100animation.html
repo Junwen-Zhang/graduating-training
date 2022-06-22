@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="no-referrer">
+    <title>播放量Top100番剧</title>
+</head>
+<body>
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-title">
+        <h2>播放量Top100番剧</h2>
+      </div>
+      <section class="counts section-bg">
+        <div class="container">
+          <table class="table table-striped">
+
+              <tr>
+                  <td>番剧图片</td>
+                  <td>剧名</td>
+                  <td>副标题</td>
+                  <td>追番人数</td>
+                  <td>集数</td>
+                  <td>评分</td>
+
+              </tr>
+
+              {% for fanju in fanjus['series'] %}
+              <tr>
+{#               图片需要显示出来#}
+                  <td>
+                      <img src="{{fanju[0]['picture_url']}}"/>
+                  </td>
+                  <td>
+                      <a href="{{ fanju[0]['url'] }}" target="_blank">
+                      {{ fanju[0]['name'] }}
+                        </a>
+                  </td>
+                  <td>{{fanju[0]['subtitle']}}</td>
+                  <td>{{fanju[0]['followers_number']}}</td>
+                  <td>{{fanju[0]['episodes']}}</td>
+                  <td>{{fanju[0]['score']}}</td>
+              </tr>
+
+              {% endfor %}
+
+
+          </table>
+        </div>
+      </section><!-- End Counts Section -->
+
+    </div>
+  </section><!-- End Our Team Section -->
+</body>
