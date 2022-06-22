@@ -5,13 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f32f4ab9-f311-439c-be2d-e22b9b78012a" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/dbmodel/guichu_length.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/guichu_main.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/show_guichu_length.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/guichu_view.py" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/compute/fanju_area_analyse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmodel/animation_area.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/show_animation_area.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8992ce1-af87-476e-9624-b2c980d51dc7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f8992ce1-af87-476e-9624-b2c980d51dc7.xml" afterDir="false" />
+=======
+>>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
+      <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+>>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/score.html" beforeDir="false" />
@@ -19,6 +41,78 @@
       <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbmodel/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive" beforeDir="false" afterPath="$PROJECT_DIR$/hive" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/area.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/bmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/tagcanvas.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/tagcanvas.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/transformations.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/counterup/counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/counterup/counterup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/icofont/icofont.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/icofont/icofont.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/jquery-sticky/jquery.sticky.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/jquery-sticky/jquery.sticky.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/vendor/waypoints/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/animation_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animation_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bar-simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bar-simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/score.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/score.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show100animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show_animation_score.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_score.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/temp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/echarts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test/testEcharts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/testEcharts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/word.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCloud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/index_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-excel/b站番剧汇总3.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/b站番剧汇总3.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-excel/视频浏览/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/视频浏览/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-excel/视频浏览/美食/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/视频浏览/美食/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../个人工作/zq/FirstPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/FirstPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../个人工作/zq/secondPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/secondPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../个人工作/zq/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目交付工件/A 先启阶段/~$软件需求规约.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理概念模型.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理概念模型.cdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理物理模型.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理物理模型.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_CDM.cdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_CDM.cdm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_PDM.pdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_PDM.pdm" afterDir="false" />
+=======
+>>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
+>>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +184,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;last_opened_file_path&quot;: &quot;C:/Users/June/Desktop/graduating-training/code/douban_flask&quot;
   }
 }</component>
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/14413/Desktop/大数据实训/小组项目/graduating-training/code/douban_flask"
+  }
+}]]></component>
+>>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
+>>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask" />
@@ -177,6 +287,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="fanju_area_analyse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="douban_flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/compute" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\大三下\小学期\term\graduating-training\code\douban_flask\compute\fanju_area_analyse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testCloud" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="douban_flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -221,21 +353,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
-      <module name="douban_flask" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
-      <option name="targetType" value="PATH" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
     <configuration name="douban_flask" type="Python.FlaskServer">
       <option name="flaskDebug" value="true" />
       <module name="douban_flask" />
@@ -255,6 +372,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.fanju_area_analyse" />
         <item itemvalue="Python.animation" />
         <item itemvalue="Python.testCloud" />
         <item itemvalue="Python.app_test" />
@@ -325,10 +443,21 @@
       <workItem from="1655825221358" duration="345000" />
       <workItem from="1655825600907" duration="178000" />
       <workItem from="1655858559853" duration="3090000" />
+      <workItem from="1655879510765" duration="1657000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/douban_flask$area_analyse.coverage" NAME="area_analyse Coverage Results" MODIFIED="1655868871893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compute" />
+    <SUITE FILE_PATH="coverage/douban_flask$Animation.coverage" NAME="Animation Coverage Results" MODIFIED="1655825457297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dbmodel" />
+    <SUITE FILE_PATH="coverage/douban_flask$testCloud.coverage" NAME="testCloud Coverage Results" MODIFIED="1583807106941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$jobs.coverage" NAME="jobs Coverage Results" MODIFIED="1583892914787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1655861658959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$test_wordcloud.coverage" NAME="test_wordcloud Coverage Results" MODIFIED="1583808185431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1655881051216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$douban_flask.coverage" NAME="douban_flask Coverage Results" MODIFIED="1584967934597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

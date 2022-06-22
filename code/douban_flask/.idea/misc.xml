@@ -3,7 +3,11 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (py37)" project-jdk-type="Python SDK" />
+<<<<<<< HEAD
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (mydouban)" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (bigData)" project-jdk-type="Python SDK" />
+>>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
   <component name="PyCharmProfessionalAdvertiser">
     <option name="shown" value="true" />
   </component>

@@ -17,11 +17,11 @@
               <tr>
                   <td>番剧图片</td>
                   <td>剧名</td>
-                  <td>副标题</td>
-                  <td>追番人数</td>
+                  <td>追番人数(万)</td>
                   <td>集数</td>
                   <td>评分</td>
-
+                  <td>标签</td>
+                  <td>简介</td>
               </tr>
 
               {% for fanju in fanjus['series'] %}
@@ -35,10 +35,11 @@
                       {{ fanju[0]['name'] }}
                         </a>
                   </td>
-                  <td>{{fanju[0]['subtitle']}}</td>
                   <td>{{fanju[0]['followers_number']}}</td>
                   <td>{{fanju[0]['episodes']}}</td>
                   <td>{{fanju[0]['score']}}</td>
+                  <td>{{fanju[0]['label']}}</td>
+                  <td>{{ fanju[0]['introduction']}}</td>
               </tr>
 
               {% endfor %}
