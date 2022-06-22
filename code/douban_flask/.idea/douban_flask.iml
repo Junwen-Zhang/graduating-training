@@ -4,16 +4,8 @@
     <option name="enabled" value="true" />
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/venv" />
-    </content>
-    <content url="jar://C:/QQfiles/1602020796/FileRecv/spark-2.4.1-bin-hadoop2.7/python/lib/py4j-0.10.7-src.zip!/" />
-    <content url="jar://C:/QQfiles/1602020796/FileRecv/spark-2.4.1-bin-hadoop2.7/python/lib/pyspark.zip!/" />
-<<<<<<< HEAD
+    <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
-=======
-    <orderEntry type="jdk" jdkName="Python 3.7 (bigData)" jdkType="Python SDK" />
->>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
