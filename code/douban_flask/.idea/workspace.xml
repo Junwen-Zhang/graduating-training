@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f32f4ab9-f311-439c-be2d-e22b9b78012a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbmodel/Animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbmodel/Animation_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/ShowAnimationScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/animation_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animation_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/showAnimationScore.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_score.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +66,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1Yn4mWMb9xVf8UU9LVKQBOYVrPK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -87,11 +77,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "C:/Users/June/Desktop/graduating-training/code/douban_flask"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/June/Desktop/graduating-training/code/douban_flask&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask" />
