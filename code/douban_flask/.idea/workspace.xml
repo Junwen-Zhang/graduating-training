@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f32f4ab9-f311-439c-be2d-e22b9b78012a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dbmodel/guichu_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guichu_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/show_guichu_length.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/guichu_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/score.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +104,8 @@
       <recent name="D:\demo\shixun\douban_flask" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask\templates" />
+      <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask\templates\guichu" />
       <recent name="G:\war\douban_flask" />
       <recent name="D:\demo\shixun\douban_flask\templates" />
     </key>

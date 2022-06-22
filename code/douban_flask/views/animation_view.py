@@ -47,7 +47,6 @@ def animationScoreAnalyse():
     view_data = {}
     view_data["x"] = []
     view_data["y"] = []
-
     def build_view_data(item):
         view_data["y"].append(item.count)
         view_data["x"].append(item.score)
