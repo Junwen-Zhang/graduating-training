@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="cb289d9f-305c-4b02-9687-b53c9f47e3af" name="Changes" comment="">
+=======
+    <list default="true" id="f32f4ab9-f311-439c-be2d-e22b9b78012a" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/dbmodel/guichu_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guichu_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/show_guichu_length.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/guichu_view.py" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/compute/fanju_area_analyse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmodel/animation_area.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/show_animation_area.html" afterDir="false" />
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
@@ -11,9 +27,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+>>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/compute/up_fans_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/up_fans_sort.py" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/score.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
+=======
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbmodel/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbmodel/animation_area.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation_area.py" afterDir="false" />
@@ -90,6 +123,12 @@
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理物理模型.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理物理模型.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_CDM.cdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_CDM.cdm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_PDM.pdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_PDM.pdm" afterDir="false" />
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
+>>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,11 +144,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/June/Desktop/graduating-training/code/douban_flask&quot;
+  }
+}</component>
+=======
+<<<<<<< HEAD
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+<<<<<<< HEAD
+=======
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/14413/Desktop/大数据实训/小组项目/graduating-training/code/douban_flask"
+  }
+}]]></component>
+>>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
+>>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask" />
+      <recent name="D:\大三下\小学期\term\graduating-training\code\douban_flask\static\assets\main" />
+      <recent name="D:\大三下\小学期\term\graduating-training\code\douban_flask\static\assets\js" />
+      <recent name="D:\大三下\小学期\term\graduating-training\code\douban_flask\compute" />
+      <recent name="D:\demo\shixun\douban_flask" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask\templates" />
+      <recent name="C:\Users\June\Desktop\graduating-training\code\douban_flask\templates\guichu" />
+      <recent name="G:\war\douban_flask" />
+      <recent name="D:\demo\shixun\douban_flask\templates" />
+    </key>
+  </component>
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="douban_flask" />
