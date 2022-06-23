@@ -7,7 +7,7 @@ from config import db
 from dbmodel.animation import Animation
 from dbmodel.animation_area import AnimationArea
 from dbmodel.animation_score import AnimationScore
-
+from compute.anime_tags import getTagsDict, get100TagsDict
 
 """
 本视图专门用于处理ajax数据
@@ -71,3 +71,36 @@ def animationAreaAnalyse():
         view_data['series'].append(dic)
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
+
+
+@animation.route('/tagsAnalyse',methods=['GET'])
+def animationTagsAnalyse():
+    Tags_dict = getTagsDict()
+    view_data={}
+    view_data["series1"] = []
+    def build_view_data(Tags_dict):
+        for key,value in Tags_dict.items():
+            if value>=50:
+                data = {}
+                data['name'] = key
+                data['value'] = value
+                view_data['series1'].append(data)
+    build_view_data(Tags_dict)
+
+    Tags_dict2 = get100TagsDict()
+    view_data["series2"] = []
+    def build_view_data2(Tags_dict):
+        for key, value in Tags_dict.items():
+            data = {}
+
+            data['name'] = key
+            data['value'] = value
+            view_data['series2'].append(data)
+    build_view_data2(Tags_dict2)
+    # print(view_data)
+    return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
+
+
+@animation.route('/animeTags')
+def animationTags():
+    return render_template("animation_tags.html")
