@@ -90,16 +90,17 @@
         ]
     };
 
-    // var maskImage = new Image();
+     var maskImage = new Image();
+     maskImage.src = data['maskImage']
     // maskImage.src = 'D:/大三/小学期/term/graduating-training/code/douban_flask/static/assets/img/tree.jpg'
     var option2 = {
         series: [{
             type: 'wordCloud',
-            // maskImage: maskImage,
+//            maskImage: maskImage,
             sizeRange: [15, 80],
             rotationRange: [0, 0],
             rotationStep: 45,
-            gridSize: 8,
+//            gridSize: 8,
             shape: 'star',
             width: '100%',
             height: '100%',
