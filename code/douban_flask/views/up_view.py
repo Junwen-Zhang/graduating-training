@@ -45,6 +45,10 @@ def getUpTrend():
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)
 
+@up.route('fans')
+def showFans():
+    return render_template("fans.html")
+
 
 
 

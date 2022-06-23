@@ -6,12 +6,12 @@ def getTagsDict():
     datalist = db.session.query(Animation).all()
     taglist=[]
     for data in datalist:
-        tags=data.tags
+        tags=data.label
         if tags!=None:
             for tag in tags.split():
                 taglist.append(tag)
 
-    print('taglist: ',taglist)
+    # print('taglist: ',taglist)
     tags_set=set(taglist)
     dict={}
     for item in tags_set:
@@ -22,17 +22,17 @@ def get100TagsDict():
     datalist2 = db.session.query(Animation).all()
     taglist = []
     for data in datalist2[0:100]:
-        tags = data.tags
+        tags = data.label
         if tags != None:
             for tag in tags.split():
                 taglist.append(tag)
 
-    print('taglist: ', taglist)
+    # print('taglist: ', taglist)
     tags_set = set(taglist)
     dict = {}
     for item in tags_set:
         dict.update({item: taglist.count(item)})
-    print(dict)
+    # print(dict)
     return dict
 
 get100TagsDict()
