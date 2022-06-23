@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="cb289d9f-305c-4b02-9687-b53c9f47e3af" name="Changes" comment="">
+=======
     <list default="true" id="f32f4ab9-f311-439c-be2d-e22b9b78012a" name="Default Changelist" comment="">
 <<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/dbmodel/guichu_length.py" afterDir="false" />
@@ -17,22 +17,26 @@
       <change afterPath="$PROJECT_DIR$/dbmodel/animation_area.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/show_animation_area.html" afterDir="false" />
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8992ce1-af87-476e-9624-b2c980d51dc7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f8992ce1-af87-476e-9624-b2c980d51dc7.xml" afterDir="false" />
-=======
->>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f8992ce1-af87-476e-9624-b2c980d51dc7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
 >>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/compute/up_fans_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/up_fans_sort.py" afterDir="false" />
+=======
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" />
@@ -42,8 +46,11 @@
       <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
 =======
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbmodel/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbmodel/animation_area.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation_area.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbmodel/up.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/up.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hive" beforeDir="false" afterPath="$PROJECT_DIR$/hive" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/area.js" afterDir="false" />
@@ -52,6 +59,7 @@
       <change beforePath="$PROJECT_DIR$/static/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/tagcanvas.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/tagcanvas.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
@@ -85,11 +93,14 @@
       <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/score.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/score.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show100animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show100up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show_animation_area.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_area.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_animation_score.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_score.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/temp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/echarts.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test/testEcharts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/testEcharts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/up_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/up_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/word.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/word.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCloud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
@@ -99,91 +110,42 @@
       <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/index_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/up_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/up_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up主.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up主.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up主流行趋势.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up主流行趋势.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data-excel/b站番剧汇总3.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/b站番剧汇总3.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/视频浏览/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/视频浏览/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/视频浏览/美食/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/视频浏览/美食/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-excel/视频浏览相关源数据/123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/视频浏览相关源数据/123.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../个人工作/lqq/lqq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/lqq/lqq.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../个人工作/zq/FirstPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/FirstPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../个人工作/zq/secondPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/secondPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../个人工作/zq/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../项目交付工件/A 先启阶段/~$软件需求规约.doc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理概念模型.cdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理概念模型.cdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理物理模型.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/安监局综合信息管理物理模型.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_CDM.cdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_CDM.cdm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_PDM.pdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/西部IT人才网_PDM.pdm" afterDir="false" />
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> dbe04264bb7e309f8aa3a4f5e9015e959d1c6bc5
 >>>>>>> 0850a8fa46556ee64ec0989ed36c75fa41d40e14
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="movie.db" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="movie.db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="movie.db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Flask Main" />
-        <option value="Python Script" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
-    <envs>
-      <env key="FLASK_APP" value="app" />
-    </envs>
-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
-    <option name="myEnvs">
-      <map>
-        <entry key="FLASK_APP" value="app" />
-      </map>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="1Yn4mWMb9xVf8UU9LVKQBOYVrPK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2AvM59DNvqrn8OQ5fmKVXheUBdn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
@@ -192,9 +154,14 @@
 }</component>
 =======
 <<<<<<< HEAD
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+<<<<<<< HEAD
+=======
 =======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -220,29 +187,8 @@
       <recent name="D:\demo\shixun\douban_flask\templates" />
     </key>
   </component>
+>>>>>>> 1382ef1c12f19fef7e86da5bda629ae0843bc446
   <component name="RunManager" selected="Python.app">
-    <configuration name="animation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="douban_flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dbmodel" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\June\Desktop\graduating-training\code\douban_flask\dbmodel\animation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="douban_flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,7 +211,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="douban_flask" type="PythonConfigurationType" factoryName="Python">
       <module name="douban_flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,12 +219,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,7 +233,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fanju_area_analyse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="up_fans_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="douban_flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,150 +246,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\大三下\小学期\term\graduating-training\code\douban_flask\compute\fanju_area_analyse.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compute/up_fans_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testCloud" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="douban_flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testCloud.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_wordcloud" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="douban_flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_wordcloud.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="douban_flask" type="Python.FlaskServer">
-      <option name="flaskDebug" value="true" />
-      <module name="douban_flask" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
-      <option name="targetType" value="PATH" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="D:\demo\shixun\douban_flask\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.fanju_area_analyse" />
-        <item itemvalue="Python.animation" />
-        <item itemvalue="Python.testCloud" />
-        <item itemvalue="Python.app_test" />
+        <item itemvalue="Python.up_fans_sort" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:movie.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:movie.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@7703263e" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f32f4ab9-f311-439c-be2d-e22b9b78012a" name="Default Changelist" comment="" />
-      <created>1583565183371</created>
+      <changelist id="cb289d9f-305c-4b02-9687-b53c9f47e3af" name="Changes" comment="" />
+      <created>1655885420312</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583565183371</updated>
-      <workItem from="1583565191468" duration="1737000" />
-      <workItem from="1583566956745" duration="1789000" />
-      <workItem from="1583568766876" duration="1814000" />
-      <workItem from="1583571255910" duration="1503000" />
-      <workItem from="1583573070668" duration="455000" />
-      <workItem from="1583577045158" duration="1056000" />
-      <workItem from="1583578325120" duration="1814000" />
-      <workItem from="1583580158859" duration="1791000" />
-      <workItem from="1583581977109" duration="1323000" />
-      <workItem from="1583583390285" duration="1342000" />
-      <workItem from="1583715158316" duration="1491000" />
-      <workItem from="1583719658814" duration="602000" />
-      <workItem from="1583724821001" duration="1056000" />
-      <workItem from="1583737602959" duration="627000" />
-      <workItem from="1583744797896" duration="1485000" />
-      <workItem from="1583746826410" duration="98000" />
-      <workItem from="1583766049577" duration="16000" />
-      <workItem from="1583803668789" duration="5505000" />
-      <workItem from="1583810546273" duration="3539000" />
-      <workItem from="1583814716109" duration="2823000" />
-      <workItem from="1583839002206" duration="2087000" />
-      <workItem from="1583887936646" duration="5988000" />
-      <workItem from="1584060651569" duration="2474000" />
-      <workItem from="1584967931769" duration="352000" />
-      <workItem from="1585042776557" duration="10000" />
-      <workItem from="1655779357371" duration="702000" />
-      <workItem from="1655793345089" duration="3463000" />
-      <workItem from="1655812708262" duration="11005000" />
-      <workItem from="1655825221358" duration="345000" />
-      <workItem from="1655825600907" duration="178000" />
-      <workItem from="1655858559853" duration="3090000" />
-      <workItem from="1655879510765" duration="1657000" />
+      <updated>1655885420312</updated>
+      <workItem from="1655885421539" duration="1500000" />
     </task>
     <servers />
   </component>
@@ -451,13 +278,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/douban_flask$area_analyse.coverage" NAME="area_analyse Coverage Results" MODIFIED="1655868871893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compute" />
-    <SUITE FILE_PATH="coverage/douban_flask$Animation.coverage" NAME="Animation Coverage Results" MODIFIED="1655825457297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dbmodel" />
-    <SUITE FILE_PATH="coverage/douban_flask$testCloud.coverage" NAME="testCloud Coverage Results" MODIFIED="1583807106941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/douban_flask$jobs.coverage" NAME="jobs Coverage Results" MODIFIED="1583892914787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/douban_flask$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1655861658959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/douban_flask$test_wordcloud.coverage" NAME="test_wordcloud Coverage Results" MODIFIED="1583808185431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1655881051216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/douban_flask$douban_flask.coverage" NAME="douban_flask Coverage Results" MODIFIED="1584967934597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$up_fans_sort.coverage" NAME="up_fans_sort Coverage Results" MODIFIED="1655885527085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compute" />
+    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1655886671192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
