@@ -15,4 +15,4 @@ app.register_blueprint(index, url_prefix="/")
 app.register_blueprint(up, url_prefix="/up")
 
 if __name__ == '__main__':
-    app.run(debug=True,port='5002')
+    app.run(debug=True)
