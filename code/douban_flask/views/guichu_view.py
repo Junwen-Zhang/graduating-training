@@ -5,7 +5,7 @@ from flask import Blueprint, render_template
 
 from config import db
 from dbmodel.guichu_length import GuichuLength
-
+from dbmodel.guichu_submit_hour import GuichuSubmitHour
 
 """
 本视图专门用于处理ajax数据
@@ -31,6 +31,24 @@ def guichuLengthAnalyse():
         dic["value"]=item.count
         view_data.append(dic)
     [build_view_data(item) for item in data]
-    print("view_data")
-    print(view_data)
+
+    return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
+
+
+@guichu.route('/submithour')
+def guichuSubmitHour():
+    return render_template("show_guichu_submithour.html")
+
+@guichu.route('/submitHourAnalyse',methods=['GET'])
+def guichuSubmitHourAnalyse():
+    data = db.session.query(GuichuSubmitHour).all()
+    view_data={}
+    view_data['x'] = []
+    view_data['y'] = []
+
+    def build_view_data(item):
+        view_data['x'].append(item.hour)
+        view_data['y'].append(item.count)
+    [build_view_data(item) for item in data]
+
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
