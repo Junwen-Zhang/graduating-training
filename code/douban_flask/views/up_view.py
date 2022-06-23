@@ -5,6 +5,7 @@ from flask import Blueprint, jsonify, request, render_template
 
 from config import db
 from dbmodel.up import Up
+from dbmodel.up_trend_total import UpTrendTotal
 
 up = Blueprint('up', __name__)
 
@@ -27,3 +28,38 @@ def show100up():
         view_data.append(dic)
     [build_view_data(item) for item in data]
     return render_template("show100up.html",ups=view_data)
+
+@up.route('/trend')
+def showUpTrend():
+    return render_template("show_up_trend.html")
+
+@up.route('/getUpTrend',methods=["GET"])
+def getUpTrend():
+    data=db.session.query(UpTrendTotal).all()
+    view_data=[]
+    def build_view_data(item):
+        dic={}
+        dic['name']=item.label
+        dic['value']=item.number
+        view_data.append(dic)
+    [build_view_data(item) for item in data]
+    return json.dumps(view_data, ensure_ascii=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
