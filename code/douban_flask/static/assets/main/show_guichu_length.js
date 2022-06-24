@@ -1,6 +1,6 @@
 (function (func) {
   $.ajax({
-    url: "/guichu/lengthAnalyse",
+    url: "/timeAnalyse/"+partition+"/"+videoid,
     type: "GET",
     dataType: "json",
     success: function (data) {

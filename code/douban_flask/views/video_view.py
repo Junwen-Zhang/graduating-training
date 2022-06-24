@@ -17,9 +17,9 @@ def videoAnalysis():
     return render_template("video_main.html")
 
 
-@video.route('/showhot/<id>')
-def show100video():
-    data = db.session.query(video(id)).all()
+@video.route('/showhot/<partition>')
+def show100video(partition):
+    data = db.session.query(video(partition)).all()
     view_data = {}
     view_data["series"] = []
     def build_view_data(item):
@@ -36,16 +36,17 @@ def show100video():
     for i in range(100):
         item=data[i]
         build_view_data(item)
-    return render_template("show100video.html",fanjus=view_data)
+    return render_template("video_hot_guichu.html",fanjus=view_data)
 
 
-@video.route('/time')
+@video.route('/time',)
 def videotime():
-    return render_template("show_video_time.html")
 
-@video.route('/timeAnalyse/<id>',methods=['GET'])
-def videotimeAnalyse():
-    data = db.session.query(videotime).all()
+    return render_template("show_video_time.html",partition=)
+
+@video.route('/timeAnalyse/<partition>/<videoid>',methods=['GET'])
+def videotimeAnalyse(partition,videoid):
+    data = db.session.query(videotime(partition)).all()
     view_data = {}
     view_data["x"] = []
     view_data["y"] = []
@@ -55,13 +56,14 @@ def videotimeAnalyse():
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 
+
 @video.route('/keyword')
 def videokeyword():
     return render_template("show_video_keyword.html")
 
-@video.route('/keywordAnalyse/<id>',methods=['GET'])
-def videokeywordAnalyse():
-    data = db.session.query(videokeyword).all()
+@video.route('/keywordAnalyse/<partition>/<videoid>',methods=['GET'])
+def videokeywordAnalyse(partition,videoid):
+    data = db.session.query(videokeyword(partition)).all()
     view_data = {}
     view_data['series']=[]
     def build_view_data(item):
