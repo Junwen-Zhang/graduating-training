@@ -4,9 +4,9 @@ import json
 from flask import Blueprint, render_template
 
 from config import db
-from dbmodel.guichu_length import GuichuLength
-from dbmodel.guichu_submit_hour import GuichuSubmitHour
-from dbmodel.guichu_tags import GuichuTags
+from dbmodel.guichu import GuichuLength,GuichuSubmitHour,GuichuTags
+
+
 
 """
 本视图专门用于处理ajax数据
@@ -17,11 +17,12 @@ guichu = Blueprint('guichu', __name__)
 def guichuAnalysis():
     return render_template("guichu_main.html")
 
-@guichu.route('/length')
-def guichuLength():
-    return render_template("show_guichu_length.html")
 
-@guichu.route('/lengthAnalyse',methods=['GET'])
+@guichu.route('/keyword')
+def guichuLength():
+    return render_template("vedio_keyword.html")
+
+@guichu.route('/keywordAnalyse',methods=['GET'])
 def guichuLengthAnalyse():
     data = db.session.query(GuichuLength).all()
     view_data = []
