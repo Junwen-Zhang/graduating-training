@@ -45,9 +45,25 @@ def getUpTrend():
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)
 
-@up.route('fans')
+# 展示20个up主粉丝变化趋势
+@up.route('/fans')
 def showFans():
     return render_template("fans.html")
+
+@up.route('/getUpFans')
+def getUpFans():
+    # 需要修改数据结构，暂定为现有的数据
+    data = db.session.query(UpTrendTotal).all()
+    view_data = []
+
+    def build_view_data(item):
+        dic = {}
+        dic['name'] = item.label
+        dic['value'] = item.number
+        view_data.append(dic)
+
+    [build_view_data(item) for item in data]
+    return json.dumps(view_data, ensure_ascii=False)
 
 
 
