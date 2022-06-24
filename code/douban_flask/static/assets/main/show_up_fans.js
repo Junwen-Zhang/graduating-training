@@ -12,17 +12,23 @@
     var myChart = echarts.init(document.getElementById('chart_up_fans'), 'infographic');
 
 
-    data = [];
-    for (let i = 0; i < 5; ++i) {
-        data.push(Math.round(Math.random() * 200));
+    // data = [];
+    // for (let i = 0; i < 5; ++i) {
+    //     data.push(Math.round(Math.random() * 200));
+    // }
+    // 20个up主的名字列表，用于y轴显示
+    nameList=[];
+    for (let i=0;i<data.length;i++){
+        nameList.push(data[i][1]);
     }
+    console.log(nameList);
     var option = {
         xAxis: {
             max: 'dataMax'
         },
         yAxis: {
             type: 'category',
-            data: ['A', 'B', 'C', 'D', 'E'],
+            data: nameList,
             inverse: true,
             animationDuration: 300,
             animationDurationUpdate: 300,
