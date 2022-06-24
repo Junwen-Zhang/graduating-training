@@ -17,7 +17,7 @@
     //     data.push(Math.round(Math.random() * 200));
     // }
     // 20个up主的名字列表，用于y轴显示
-    nameList=[];
+    var nameList=[];
     for (let i=0;i<data.length;i++){
         nameList.push(data[i][1]);
     }
@@ -32,7 +32,7 @@
             inverse: true,
             animationDuration: 300,
             animationDurationUpdate: 300,
-            max: 4 // only the largest 3 bars will be displayed
+            max: data.length-1 // only the largest 3 bars will be displayed
         },
         series: [
             {
@@ -57,13 +57,13 @@
     };
     function run() {
         console.log('running');
-        for (var i = 0; i < data.length; ++i) {
-            if (Math.random() > 0.9) {
-                data[i] += Math.round(Math.random() * 2000);
-            } else {
-                data[i] += Math.round(Math.random() * 200);
-            }
-        }
+        // for (var i = 0; i < data.length; ++i) {
+        //     if (Math.random() > 0.9) {
+        //         data[i] += Math.round(Math.random() * 2000);
+        //     } else {
+        //         data[i] += Math.round(Math.random() * 200);
+        //     }
+        // }
         myChart.setOption(option);
     }
 
