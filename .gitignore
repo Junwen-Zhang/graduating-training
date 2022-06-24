@@ -6,6 +6,8 @@ bin-release/
 
 # Other files and folders
 .settings/
+./code/douban_flask/__pycache__/
+*.pyc
 
 # Executables
 *.swf

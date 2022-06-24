@@ -80,11 +80,10 @@ def animationTagsAnalyse():
     view_data["series1"] = []
     def build_view_data(Tags_dict):
         for key,value in Tags_dict.items():
-            if value>=50:
-                data = {}
-                data['name'] = key
-                data['value'] = value
-                view_data['series1'].append(data)
+            data = {}
+            data['name'] = key
+            data['value'] = value
+            view_data['series1'].append(data)
     build_view_data(Tags_dict)
 
     Tags_dict2 = get100TagsDict()
@@ -97,6 +96,7 @@ def animationTagsAnalyse():
             data['value'] = value
             view_data['series2'].append(data)
     build_view_data2(Tags_dict2)
+    view_data['maskImage']='./img/tree.jpg'
     # print(view_data)
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 

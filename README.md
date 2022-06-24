@@ -7,6 +7,9 @@ git add -A (暂存所有已修改的文件)
 git commit -m ...说明信息 (提交暂存的文件)
 git push (向仓库推送)
 git pull (拉去最新的版本)
+
+平时记得多pull一下，看看别人有没有跟新。
+若本地文件有修改，先add再commit，然后pull下来，如有冲突手动merge，最后再push上去。
 ```
 
 ### 文件目录说明

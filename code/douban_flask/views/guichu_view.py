@@ -6,6 +6,7 @@ from flask import Blueprint, render_template
 from config import db
 from dbmodel.guichu_length import GuichuLength
 from dbmodel.guichu_submit_hour import GuichuSubmitHour
+from dbmodel.guichu_tags import GuichuTags
 
 """
 本视图专门用于处理ajax数据
@@ -49,6 +50,21 @@ def guichuSubmitHourAnalyse():
     def build_view_data(item):
         view_data['x'].append(item.hour)
         view_data['y'].append(item.count)
+    [build_view_data(item) for item in data]
+
+    return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
+
+@guichu.route('/wordcloud')
+def guichuWordcloud():
+    return render_template("show_guichu_wordcloud.html")
+
+@guichu.route('/wordcloudAnalyse',methods=['GET'])
+def guichuWordcloudAnalyse():
+    data = db.session.query(GuichuTags).all()
+    view_data=[]
+
+    def build_view_data(item):
+        view_data.append({"name":item.tag,"value":item.sqrt_count})
     [build_view_data(item) for item in data]
 
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
