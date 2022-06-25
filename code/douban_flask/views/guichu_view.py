@@ -20,7 +20,7 @@ def guichuAnalysis():
 
 @guichu.route('/keyword')
 def guichuLength():
-    return render_template("vedio_keyword.html")
+    return render_template("video_keyword.html")
 
 @guichu.route('/keywordAnalyse',methods=['GET'])
 def guichuLengthAnalyse():

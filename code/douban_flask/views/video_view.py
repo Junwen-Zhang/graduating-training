@@ -4,8 +4,9 @@ import json
 from flask import Blueprint, jsonify, request, render_template
 
 from config import db
-from dbmodel.video import Video,VideoKeyword,VideoTime
+from dbmodel.video import make_vedio,make_vediokeyword,make_vediotime
 
+transform={"movie":"电影","game":"游戏","music":"音乐","guichu":"鬼畜","food":"美食"}
 
 """
 本视图专门用于处理ajax数据
@@ -17,36 +18,51 @@ def videoAnalysis():
     return render_template("video_main.html")
 
 
-@video.route('/showhot/<partition>')
-def show100video(partition):
-    data = db.session.query(video(partition)).all()
-    view_data = {}
-    view_data["series"] = []
+@video.route('/showhot')
+def show100video():
+    partition=request.args.get('partition')
+    data = db.session.query(make_vedio(partition)).all()
+    videos = []
     def build_view_data(item):
         dic = {}
         dic["name"] = item.name
-        dic["url"] = "https://"+item.url2+"?spm_id_from=666.25.b_6d656469615f6d6f64756c65.2"
-        dic["picture_url"] = item.picture_url
-        dic["followers_number"] = item.followers_number
-        dic["episodes"] = item.episodes
-        dic["score"] = item.score
-        dic["label"]=item.label
-        dic["introduction"]=item.introduction
-        view_data["series"].append([dic])
-    for i in range(100):
-        item=data[i]
-        build_view_data(item)
-    return render_template("video_hot_guichu.html",fanjus=view_data)
+        dic["url"] = item.link
+        dic["picture_url"] = item.img
+        dic["time"] = item.time
+        dic["label"]=item.tag
+        dic["like"] = item.like
+        dic["coin"] = item.coin
+        dic["collection"] = item.collection
+        dic["trans"] = item.trans
+
+        if len(item.intro)<=5:
+            dic["intro"]=""
+        else:
+            dic["intro"]=item.intro
+        tagslist=item.tag.split(" ")
+        if len(tagslist)>4:
+            tagslist=tagslist[0:4]
+        dic["label"]="/".join(tagslist)
+        videos.append(dic)
+
+    [build_view_data(item) for item in data]
+    data={}
+    data["videos"]=videos
+    data["partition"]=transform[partition]+"分区"
+    return render_template("video_hot.html",data=data)
 
 
 @video.route('/time',)
 def videotime():
+    partition=request.args.get('partition')
+    videoid=request.args.get('videoid')
+    return render_template("show_video_time.html",partition=partition,videoid=videoid)
 
-    return render_template("show_video_time.html",partition=)
-
-@video.route('/timeAnalyse/<partition>/<videoid>',methods=['GET'])
-def videotimeAnalyse(partition,videoid):
-    data = db.session.query(videotime(partition)).all()
+@video.route('/timeAnalyse',methods=['GET'])
+def videotimeAnalyse():
+    partition=request.args.get('partition')
+    videoid=request.args.get('videoid')
+    data = db.session.query(make_vediotime(partition)).all()
     view_data = {}
     view_data["x"] = []
     view_data["y"] = []
@@ -59,11 +75,15 @@ def videotimeAnalyse(partition,videoid):
 
 @video.route('/keyword')
 def videokeyword():
-    return render_template("show_video_keyword.html")
+    partition=request.args.get('partition')
+    videoid=request.args.get('videoid')
+    return render_template("show_video_time.html",partition=partition,videoid=videoid)
 
-@video.route('/keywordAnalyse/<partition>/<videoid>',methods=['GET'])
+@video.route('/keywordAnalyse',methods=['GET'])
 def videokeywordAnalyse(partition,videoid):
-    data = db.session.query(videokeyword(partition)).all()
+    partition=request.args.get(partition)
+    videoid=request.args.get(videoid)
+    data = db.session.query(make_vediokeyword(partition)).all()
     view_data = {}
     view_data['series']=[]
     def build_view_data(item):
