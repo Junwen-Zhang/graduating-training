@@ -54,6 +54,7 @@ def show100video():
 
 @video.route('/time',)
 def videotime():
+<<<<<<< HEAD
     partition=request.args.get('partition')
     videoid=request.args.get('videoid')
     return render_template("show_video_time.html",partition=partition,videoid=videoid)
@@ -63,6 +64,20 @@ def videotimeAnalyse():
     partition=request.args.get('partition')
     videoid=request.args.get('videoid')
     data = db.session.query(make_vediotime(partition)).all()
+=======
+<<<<<<< HEAD
+
+    return render_template("show_video_time.html")
+
+=======
+
+    return render_template("show_video_time.html",partition=)
+
+>>>>>>> fdd09eccf1f0623fab8bca4b60e3deb474f23a7c
+@video.route('/timeAnalyse/<partition>/<videoid>',methods=['GET'])
+def videotimeAnalyse(partition,videoid):
+    data = db.session.query(videotime(partition)).all()
+>>>>>>> 913148aebb2499f08a14ec2b8b47b1b4a5a16453
     view_data = {}
     view_data["x"] = []
     view_data["y"] = []

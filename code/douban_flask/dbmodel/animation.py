@@ -1,6 +1,6 @@
 from config import db
 
-
+# 番剧基本信息
 class Animation(db.Model):
     __tablename__ = "fanju"
     # id = db.Column(db.Integer, autoincrement=True,primary_key=True)
@@ -18,3 +18,14 @@ class Animation(db.Model):
     url2=db.Column(db.String(100))     # 需要跳转的网址
     introduction=db.Column(db.String(255))
 
+# 统计番剧的地区分布
+class AnimationArea(db.Model):
+    __tablename__ = "fanju_area_count"
+    area =db.Column(db.String(50),primary_key=True)
+    count=db.Column(db.INTEGER)
+
+# 统计番剧的分数分布
+class AnimationScore(db.Model):
+    __tablename__ = "fanju_score_count"
+    score = db.Column(db.DECIMAL(3, 1), primary_key=True)
+    count=db.Column(db.INTEGER)

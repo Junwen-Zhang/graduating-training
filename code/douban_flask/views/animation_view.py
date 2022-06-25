@@ -5,8 +5,8 @@ from flask import Blueprint, jsonify, request, render_template
 
 from config import db
 from dbmodel.animation import Animation
-from dbmodel.animation_area import AnimationArea
-from dbmodel.animation_score import AnimationScore
+from dbmodel.animation import AnimationArea
+from dbmodel.animation import AnimationScore
 from compute.anime_tags import getTagsDict, get100TagsDict
 
 """
