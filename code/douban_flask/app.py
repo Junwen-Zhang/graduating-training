@@ -5,7 +5,6 @@
 from config import app
 
 from views.index_view import index
-
 # from views.animation_view import animation
 from views.guichu_view import guichu
 # from views.up_view import up

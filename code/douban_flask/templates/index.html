@@ -9,6 +9,82 @@
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
+    <style>
+        .search-box {
+            font-family: FontAwesome;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            height: 40px;
+            border: 10px;
+            border-radius: 40px;
+            padding: 10px;
+            opacity: 0;
+            transition-delay: 99999999s;
+            transition-duration: 1s;
+        }
+
+        .search-box:hover > .search-txt {
+            width: 240px;
+            padding: 0 6px;
+        }
+
+        .search-box:hover > .search-btn {
+            color: white;
+            background: black;
+        }
+
+        .search-btn {
+            transition: 0.5s;
+            font-family: FontAwesome;
+            font-size: 25px;
+            color: black;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border: 10px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: rgb(51, 159, 150);
+            font-size: 16px;
+            transition: 0.6s;
+            line-height: 50px;
+            width: 0px;
+        }
+        @keyframes flash {
+            50% {
+                transform: scale(1.5);
+            }
+            80% {
+                transform: rotate(-60deg);
+            }
+            100% {
+                transform: rotate(30deg);
+            }
+        }
+
+        html:hover .search-box {
+            opacity: 1;
+            transition-delay: 0s;
+            transition-duration: 0s;
+        }
+
+    </style>
+
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- Favicons -->
@@ -33,18 +109,16 @@
 </head>
 
 <body>
-
-
-<!-- ======= Header ======= -->
-
-
 <!-- ======= Our Team Section ======= -->
 <section id="team" class="team">
     <div class="container">
 
         <div class="section-title">
             <h2>bilibili网站数据分析</h2>
-            <p>应用Python爬虫、Flask框架、Echarts、Spark、Mysql、Hadoop等技术实现</p>
+            <div class="search-box">
+                <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+                <input class="search-btn" type='button' id='btn' value='&#xf002'/>
+            </div>
         </div>
 
         <!-- ======= Counts Section ======= -->
@@ -107,13 +181,34 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>大数据A6</span></strong>. All Rights Reserved
         </div>
 
     </div>
 </footer><!-- End Footer -->
 
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<script>
+    var oInp = document.getElementById('inp');
+    var oBtn = document.getElementById('btn');
+
+    oBtn.onclick = function () {
+        Search();
+    }
+
+    document.onkeydown = function () {
+        if (event.keyCode == 13) {
+            Search();
+        }
+    }
+
+    function Search() {
+        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+        window.open(url);
+    }
+</script>
+
 
 <!-- Vendor JS Files -->
 <script src="static/assets/vendor/jquery/jquery.min.js"></script>
