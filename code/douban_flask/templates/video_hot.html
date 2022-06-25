@@ -48,7 +48,16 @@
                         <td>{{video['trans']}}</td>
                         <td>{{video['intro']}}</td>
                         <td>{{video['label']}}</td>
-
+                        <td>
+                            <a href="/video/keyword?partition={{data['partition']}}&videoid={{video['id']}}" target="_blank">
+                                弹幕词云图
+                            </a>
+                        </td>
+                        <td>
+                            <a href="/video/time?partition={{data['partition']}}&videoid={{video['id']}}" target="_blank">
+                                浏览量变化
+                            </a>
+                        </td>
                     </tr>
 
                     {% endfor %}
