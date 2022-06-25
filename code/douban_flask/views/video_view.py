@@ -41,9 +41,15 @@ def show100video(partition):
 
 @video.route('/time',)
 def videotime():
+<<<<<<< HEAD
 
     return render_template("show_video_time.html")
 
+=======
+
+    return render_template("show_video_time.html",partition=)
+
+>>>>>>> fdd09eccf1f0623fab8bca4b60e3deb474f23a7c
 @video.route('/timeAnalyse/<partition>/<videoid>',methods=['GET'])
 def videotimeAnalyse(partition,videoid):
     data = db.session.query(videotime(partition)).all()
