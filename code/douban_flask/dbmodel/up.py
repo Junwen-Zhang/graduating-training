@@ -57,11 +57,32 @@ class UpTrendTotal(db.Model):
 # 最受欢迎up主的基本信息
 class MostPopularUp(db.Model):
     __tablename__="most_popular_up"
-    uid=db.Column(db.String(50))
+    uid=db.Column(db.String(50),primary_key=True)
     name=db.Column(db.String(50))
     section=db.Column(db.String(100))
-    fans=db.column(db.INTEGER)
+    fans=db.Column(db.INTEGER)
     likes=db.Column(db.String(50))
     views=db.Column(db.String(50))
 
+# 最收欢迎up主的热门视频
+class MostPopularUpVideo(db.Model):
+    __tablename__="most_popular_up_videos"
+    bvid=db.Column(db.String(50),primary_key=True)
+    picture_url=db.Column(db.String(255))
+    title=db.Column(db.String(100))
+    introduction=db.Column(db.String(255))
+    url=db.Column(db.String(255))
+    views=db.Column(db.String(50))
+    danmus=db.Column(db.INTEGER)
+    uploadTime=db.Column(db.String(255))
+    likes=db.Column(db.String(50))
+    coins=db.Column(db.String(50))
+    collections=db.Column(db.String(50))
+    tags=db.Column(db.String(255))
+
+# 最受欢迎up主视频标签统计
+class MostPopularUpVideosTagsCount(db.Model):
+    __tablename__="most_popular_up_videos_tags_count"
+    tag=db.Column(db.String(50),primary_key=True)
+    count=db.Column(db.INTEGER)
 

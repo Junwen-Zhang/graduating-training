@@ -7,7 +7,7 @@ from config import db
 from dbmodel.up import Up
 from dbmodel.up import UpTrendTotal
 from dbmodel.up import UpFansTrend
-from dbmodel.up import MostPopularUp
+from dbmodel.up import MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount
 
 up = Blueprint('up', __name__)
 
@@ -100,8 +100,9 @@ def getUpFans():
     return json.dumps(view_data, ensure_ascii=False)
 
 # 展示最受欢迎up主的基本信息
-@up.route('/showMostPolpularUp')
+@up.route('/showMostPopularUp')
 def showMostPolpularUp():
+    # 最受欢迎up主的主要信息
     data=db.session.query(MostPopularUp).all()
     view_data=[]
     def selectData(item):
@@ -118,7 +119,35 @@ def showMostPolpularUp():
             dic['url']=data2.url
             view_data.append(dic)
     [selectData(item) for item in data]
-    return render_template("show_most_polpular_up.html",view_data)
+
+    # 最受欢迎的up主的热门视频
+    data2=db.session.query(MostPopularUpVideo).all()
+    view_data2=[]
+    for i in range(10):
+        dic={}
+        dic['picture_url']=data2[i].picture_url
+        dic['title']=data2[i].title
+        dic['introduction']=data2[i].introduction
+        dic['url']=data2[i].url
+        dic['views']=data2[i].views
+        dic['tags']=data2[i].tags.split(' ')
+        view_data2.append(dic)
+    return render_template("show_most_popular_up.html", ups=view_data,videos=view_data2)
+
+# 得到画出最受欢迎的up主的视频的标签的统计数据
+@up.route('/getMostPopularUpVideosTags')
+def getMostPopularUpVideosTags():
+    data=db.session.query(MostPopularUpVideosTagsCount)
+    view_data=[]
+    def build_view_data(item):
+        dic={}
+        dic['name']=item.tag
+        dic['value']=item.count
+        if(dic['value']>10):
+            view_data.append(dic)
+    [build_view_data(item) for item in data]
+    return json.dumps(view_data, ensure_ascii=False)
+    
 
 
 
