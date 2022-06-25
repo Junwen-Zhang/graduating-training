@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最受欢迎up主</title>
+</head>
+<body>
+<h1>最受欢迎up主</h1>
+<table class="table table-striped">
+    {% for item in view_data %}
+    <tr>
+        {#               图片需要显示出来,点击图片跳转到该up主的主页#}
+        <td>
+            <img src="{{ item['picture_url'] }}" href="{{ item['url'] }}" target="_blank"/>
+        </td>
+        <td>
+            up主昵称{{ item['name'] }}
+        </td>
+        <td>uid{{ item['uid'] }}</td>
+        <td>粉丝数{{ item['fans'] }}</td>
+        <td>点赞数{{ item['likes'] }}</td>
+        <td>视频数{{ item[''] }}</td>
+        <td>播放数{{  }}</td>
+    </tr>
+</table>
+<div id="chart_most_popularp_tags" class="main_table t_btn8" style="width:100%;height:500px"></div>
+
+</body>
+<script src="/static/assets/js/jquery-2.2.1.min.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/common.js"></script>
+
+
+<script src="/static/assets/js/echarts.js"></script>
+<script src="/static/assets/js/dataTool.js"></script>
+<script src="/static/assets/js/china.js"></script>
+<script src="/static/assets/js/tagcanvas.min.js"></script>
+<script src="/static/assets/js/area.js"></script>
+<script src="/static/assets/main/show_most_popular_up_tags.js"></script>
+</html>
