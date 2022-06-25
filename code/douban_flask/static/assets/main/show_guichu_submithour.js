@@ -21,6 +21,7 @@
     }
     var option = {
         title: {
+            left:'36%',
             text: '特性示例：渐变色 阴影 点击缩放',
             subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
         },
@@ -29,6 +30,7 @@
             axisLabel: {
                 inside: true,
                 color: '#fff'
+
             },
             axisTick: {
                 show: false
@@ -58,7 +60,9 @@
             {
                 type: 'bar',
                 showBackground: true,
+
                 itemStyle: {
+
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                         { offset: 0, color: '#83bff6' },
                         { offset: 0.5, color: '#188df0' },

@@ -1,8 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <a href="/guichu/length">时长分析</a>
-    <a href="/guichu/submithour">投放时间分析</a>
-    <a href="/guichu/wordcloud">词云图</a>
-    <a href="">地区统计</a>
+
+    <meta charset="utf-8">
+    <title>鬼畜</title>
+
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            margin-left: 50px;
+            margin-right: 910px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #9dc5f6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 16px;
+            color: white;
+        }
+
+        /*li a:hover {
+            background-color: skyblue;
+        }*/
+        li a:hover:not(.active) {
+            background-color: skyblue;
+            color: white;
+        }
+
+        .columnNav ul {
+            list-style-type: none;
+            margin-left: 50px;
+            margin-right: 910px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #9dc5f6;
+        }
+
+        .columnNav ul li {
+            float: left;
+        }
+
+        .columnNav ul li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 16px;
+            color: white;
+        }
+
+        .columnNav ul li a:hover {
+            background-color: skyblue;
+            color: white;
+
+        }
+
+        .columnNav .active a {
+            background-color: #5ba2fa;
+            color: white;
+        }
+
+        {#.columnNav .active{#}
+        {#  background: url(../images/index/line.png) no-repeat center;#}
+
+
+
+
+    </style>
+
 </head>
+
+<body>
+<div class="columnNav">
+    <ul class="tabs">
+        <li><a class="active" href="#tab1">时长分析</a></li>
+        <li><a href="#tab2">投放时间分析</a></li>
+        <li><a href="#tab3">词云图</a></li>
+    </ul>
+</div>
+<div class="columnContent">
+    <div class="c-tab-body">
+        <div id="tab1" class="tab_content">
+            <div id="chart_guichu_length" class="chart" style="width: 100%; height: 300px"></div>
+        </div>
+        <div id="tab2" class="tab_content">
+            <div id="chart_guichu_submithour" class="chart"
+                 style="width: 1000px; height: 300px;margin-left: 150px;margin-top: 80px" ;></div>
+        </div>
+        <div id="tab3" class="tab_content">
+            <div id="chart_guichu_wordcloud" class="chart"
+                 style="width: 500px; height: 300px; margin-left: 400px;margin-top: 80px"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="/static/assets/js/jquery-2.2.1.min.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/common.js"></script>
+
+
+<script src="/static/assets/js/echarts.min.js"></script>
+<script src="/static/assets/js/dataTool.js"></script>
+<script src="/static/assets/js/china.js"></script>
+<script src="/static/assets/js/tagcanvas.min.js"></script>
+<script src="/static/assets/js/area.js"></script>
+{#鬼畜视频时长css#}
+<script src="/static/assets/main/show_guichu_length.js"></script>
+{#鬼畜视频上传时间段css#}
+<script src="/static/assets/main/show_guichu_submithour.js"></script>
+{#鬼畜词云图css#}
+<script src="/static/assets/main/show_guichu_wordcloud.js"></script>
+<script src="/static/assets/js/echart3.js"></script>
+<script src="/static/assets/js/echarts-wordcloud.js"></script>
+
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        $(".tab_content").hide();
+        $("ul.tabs li:first").addClass("active").show();
+        $(".tab_content:first").show();
+        $("ul.tabs li").click(function () {
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+            $(".tab_content").hide();
+            var activeTab = $(this).find("a").attr("href");
+            $(activeTab).fadeIn();
+            return false;
+        });
+    })();
+
+</script>
+</body>
