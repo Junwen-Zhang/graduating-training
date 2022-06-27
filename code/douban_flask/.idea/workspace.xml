@@ -37,6 +37,9 @@
       <change beforePath="$PROJECT_DIR$/static/assets/main/show_most_popular_up_tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_most_popular_up_tags.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/main/show_up_fans.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_up_fans.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/main/show_up_trend.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_up_trend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/main/show_video_time.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_video_time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/main/show_video_wordcloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_video_wordcloud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/main/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
@@ -69,14 +72,16 @@
       <change beforePath="$PROJECT_DIR$/templates/guichu_length.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guichu_length.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/guichu_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guichu_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchVideo_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show100animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100animation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show100up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100up.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_animation_area.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_area.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_animation_score.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_score.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_guichu_submithour.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_guichu_submithour.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_guichu_wordcloud.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_guichu_wordcloud.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_up_fans.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_up_fans.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_up_trend.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_up_trend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show_video_keyword.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_video_keyword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show_video_time.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_video_time.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/echarts.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test/testEcharts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/testEcharts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/up_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/up_main.html" afterDir="false" />
@@ -96,6 +101,7 @@
       <change beforePath="$PROJECT_DIR$/../../data-database/bilibili_zjw_0622.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/bilibili_zjw_0622.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data-database/video10tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/video10tables.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data-database/鬼畜全部4张表.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/鬼畜全部4张表.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data-database/鬼畜和热门两个页面全部的数据zjw0626.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/鬼畜和热门两个页面全部的数据zjw0626.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up主.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up主.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up主流行趋势.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up主流行趋势.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up流行趋势标签统计.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up流行趋势标签统计.xls" afterDir="false" />
@@ -198,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656146337700</updated>
       <workItem from="1656146340665" duration="2633000" />
-      <workItem from="1656290543526" duration="3165000" />
+      <workItem from="1656290543526" duration="7213000" />
     </task>
     <servers />
   </component>
@@ -206,6 +212,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1656293295505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1656295409967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
