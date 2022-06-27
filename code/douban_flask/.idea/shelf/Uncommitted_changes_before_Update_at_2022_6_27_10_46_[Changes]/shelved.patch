@@ -1,0 +1,363 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.7 (env)\" project-jdk-type=\"Python SDK\" />\r\n  <component name=\"PyCharmProfessionalAdvertiser\">\r\n    <option name=\"shown\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (env)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
+   <component name="PyCharmProfessionalAdvertiser">
+     <option name="shown" value="true" />
+   </component>
+Index: static/assets/main/searchVideo_view.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/static/assets/main/searchVideo_view.js b/static/assets/main/searchVideo_view.js
+new file mode 100644
+--- /dev/null	
++++ b/static/assets/main/searchVideo_view.js	
+@@ -0,0 +1,64 @@
++(function (func) {
++    $.ajax({
++        url: "/search?link="+link,
++        type: "GET",
++        dataType: "json",
++        success: function (data) {
++            func(data);
++        }
++    });
++})(function (data) {
++    console.log(data);
++
++    var myChart = echarts.init(document.getElementById('searchVideo_show'), 'infographic');
++    var myChart1 = echarts.init(document.getElementById('searchCritisis_Analy'), 'infographic');
++
++    var option1 = {
++        series: [{
++            type: 'wordCloud',
++//            maskImage: maskImage,
++            sizeRange: [15, 80],
++            rotationRange: [0, 0],
++            rotationStep: 45,
++//            gridSize: 8,
++            shape: 'star',
++            width: '100%',
++            height: '100%',
++            textStyle: {
++                normal: {
++                    color: function () {
++                        return 'rgb(' + [
++                            Math.round(Math.random() * 160),
++                            Math.round(Math.random() * 160),
++                            Math.round(Math.random() * 160)
++                        ].join(',') + ')';
++                    },
++                    fontFamily: 'sans-serif',
++                    fontWeight: 'normal'
++                },
++                emphasis: {
++                    shadowBlur: 10,
++                    shadowColor: '#333'
++                }
++            },
++            data: data['series1']
++        }]
++    };
++
++// 词云图
++//     var maskImage = new Image();
++//     maskImage.src = 'img/tree.png';
++
++
++    myChart.setOption(option);
++    window.addEventListener("resize", function () {
++        myChart.resize();
++    });
++
++    myChart1.setOption(option1);
++    window.addEventListener("resize", function () {
++        myChart1.resize();
++    });
++
++
++});
+\ No newline at end of file
+Index: spider/spider_videoComment.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spider/spider_videoComment.py b/spider/spider_videoComment.py
+new file mode 100644
+--- /dev/null	
++++ b/spider/spider_videoComment.py	
+@@ -0,0 +1,58 @@
++import re
++
++import requests
++import os
++import time
++import json
++
++import xlwt
++
++cookie = "buvid3=63B1C902-3DD5-CD46-85D8-9A69679BC65665004infoc; CURRENT_FNVAL=80; blackside_state=1; sid=6aaqymp9; rpdid=|(u)mJ~Rlll~0J'uYkR||uuYm; fingerprint=33bf6967b63128e997c2ee0e3659a990; buvid_fp=63B1C902-3DD5-CD46-85D8-9A69679BC65665004infoc; buvid_fp_plain=63B1C902-3DD5-CD46-85D8-9A69679BC65665004infoc"
++file_dir = "F:/summer_project/commentFiles/"
++dir_xls = "F:/summer_project/commentFiles/savename.xls"
++content_api = 'https://api.bilibili.com/x/v2/reply/main?jsonp=jsonp&type=1&mode=3&plat=1'
++# 1:评论(楼层);2:最新评论(时间);3:热门评论(热度)
++comment_mode = 3
++headers = {
++        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36',
++        'cookie': cookie  # 在请求头里复制自己的cookie
++    }
++
++# bv转av，输入如BVxxxxxxxxx，输出一串数字av号
++def bv2av(bv:str,url:str)->str:
++    response = requests.get(url=url,params={'bvid':bv},headers=headers)
++    av = str(response.json()['data']['aid'])
++    return av
++
++def scrape_url(url:str)->dict:
++    if '/' in url or '?' in url:
++        # 分解链接
++        bv = url.split('/')[-1].split('?')[0]
++    av = bv2av(bv,url)
++    pattern = re.compile(r'{.*}') # 去除外层的jquery括号，让数据能被json解析
++
++    params={'jsonp':'jsonp','type':1,'oid':av,'mode':3,'plat':1} # 构造参数
++    headers['referer'] = url # 修改referer为当前视频url
++    next = 0 # 初始值为0
++
++    comment_list=[]
++    for k in range(0,10):
++        params['next'] = next
++        response = requests.get(url=content_api,params=params,headers=headers)
++        json_text = pattern.search(response.text).group(0)
++        is_end = json.loads(json_text)['data']['cursor']['is_end']
++        if is_end: # is_end为True就break
++            break
++        replies_info = json.loads(json_text)['data']['replies']
++
++        for i in replies_info:
++            res = {'like': i['like'], 'mid': i['member']['mid'], 'uname': i['member']['uname'],'massage':i['content']['message']}
++            comment_list.append(res)
++        if next!=0: # 坑爹的参数，经过实践发现第一组next为0，第二组next为2，之后依次+1递增，next设为0和1返回数据一样。为了和实际保持一样，出此下策
++            next+=1
++        else:
++            next+=2
++    print(len(comment_list))
++    return comment_list
++
++
+Index: config.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from flask import Flask\r\nfrom flask_sqlalchemy import SQLAlchemy\r\n\r\nimport pymysql\r\npymysql.install_as_MySQLdb()\r\n\r\napp = Flask(__name__)\r\n\r\n# url的格式为：数据库的协议：//用户名：密码@ip地址：端口号（默认可以不写）/数据库名\r\n# 兰庆秋\r\n# app.config[\"SQLALCHEMY_DATABASE_URI\"] = \"mysql://root:12345678@192.168.66.121:3306/bilibili\"\r\n\r\n# 章俊文\r\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"mysql://root:12345678@127.0.0.1:3306/bilibili\"\r\n\r\n# 杨雅馨\r\n# app.config[\"SQLALCHEMY_DATABASE_URI\"] = \"mysql://root:12345678@192.168.80.150:3306/guichu\"\r\n\r\n# 动态追踪数据库的修改. 性能不好. 且未来版本中会移除. 目前只是为了解决控制台的提示才写的\r\napp.config[\"SQLALCHEMY_TRACK_MODIFICATIONS\"] = False\r\n# 创建数据库的操作对象\r\ndb = SQLAlchemy(app)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/config.py b/config.py
+--- a/config.py	
++++ b/config.py	
+@@ -11,11 +11,15 @@
+ # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.66.121:3306/bilibili"
+ 
+ # 章俊文
+-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@127.0.0.1:3306/bilibili"
++# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@127.0.0.1:3306/bilibili"
+ 
+ # 杨雅馨
+ # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.80.150:3306/guichu"
+ 
++
++#Z张倩
++app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.80.155:3306/bilibili"
++
+ # 动态追踪数据库的修改. 性能不好. 且未来版本中会移除. 目前只是为了解决控制台的提示才写的
+ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+ # 创建数据库的操作对象
+Index: templates/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\r\n\r\n    <title>bilibili网站数据分析</title>\r\n    <meta content=\"\" name=\"descriptison\">\r\n    <meta content=\"\" name=\"keywords\">\r\n\r\n    <style>\r\n        .search-box {\r\n            font-family: FontAwesome;\r\n            position: absolute;\r\n            top: 20%;\r\n            left: 50%;\r\n            transform: translate(-50%, -50%);\r\n            background: #ffffff;\r\n            height: 40px;\r\n            border: 10px;\r\n            border-radius: 40px;\r\n            padding: 10px;\r\n            opacity: 0;\r\n            transition-delay: 99999999s;\r\n            transition-duration: 1s;\r\n        }\r\n\r\n        .search-box:hover > .search-txt {\r\n            width: 240px;\r\n            padding: 0 6px;\r\n        }\r\n\r\n        .search-box:hover > .search-btn {\r\n            color: white;\r\n            background: black;\r\n        }\r\n\r\n        .search-btn {\r\n            transition: 0.5s;\r\n            font-family: FontAwesome;\r\n            font-size: 25px;\r\n            color: black;\r\n            float: right;\r\n            width: 40px;\r\n            height: 40px;\r\n            border: 10px;\r\n            border-radius: 50%;\r\n            background: #ffffff;\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n            text-decoration: none;\r\n        }\r\n\r\n        .search-txt {\r\n            border: none;\r\n            background: none;\r\n            outline: none;\r\n            float: left;\r\n            padding: 0;\r\n            color: rgb(51, 159, 150);\r\n            font-size: 16px;\r\n            transition: 0.6s;\r\n            line-height: 50px;\r\n            width: 0px;\r\n        }\r\n        @keyframes flash {\r\n            50% {\r\n                transform: scale(1.5);\r\n            }\r\n            80% {\r\n                transform: rotate(-60deg);\r\n            }\r\n            100% {\r\n                transform: rotate(30deg);\r\n            }\r\n        }\r\n\r\n        html:hover .search-box {\r\n            opacity: 1;\r\n            transition-delay: 0s;\r\n            transition-duration: 0s;\r\n        }\r\n\r\n    </style>\r\n\r\n    <link rel=\"stylesheet\" href=\"https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css\">\r\n\r\n    <!-- Favicons -->\r\n    <link href=\"static/assets/img/favicon.png\" rel=\"icon\">\r\n    <link href=\"static/assets/img/apple-touch-icon.png\" rel=\"apple-touch-icon\">\r\n\r\n    <!-- Google Fonts -->\r\n    <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900\"\r\n          rel=\"stylesheet\">\r\n\r\n    <!-- Vendor CSS Files -->\r\n    <link href=\"static/assets/vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n    <link href=\"static/assets/vendor/icofont/icofont.min.css\" rel=\"stylesheet\">\r\n    <link href=\"static/assets/vendor/boxicons/css/boxicons.min.css\" rel=\"stylesheet\">\r\n    <link href=\"static/assets/vendor/animate.css/animate.min.css\" rel=\"stylesheet\">\r\n    <link href=\"static/assets/vendor/venobox/venobox.css\" rel=\"stylesheet\">\r\n    <link href=\"static/assets/vendor/aos/aos.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Template Main CSS File -->\r\n    <link href=\"static/assets/css/style.css\" rel=\"stylesheet\">\r\n\r\n</head>\r\n\r\n<body>\r\n<!-- ======= Our Team Section ======= -->\r\n<section id=\"team\" class=\"team\">\r\n    <div class=\"container\">\r\n\r\n        <div class=\"section-title\">\r\n            <h2>bilibili网站数据分析</h2>\r\n            <div class=\"search-box\">\r\n                <input class=\"search-txt\" type='text' id='inp' placeholder=\"What are you looking for?\"/>\r\n                <input class=\"search-btn\" type='button' id='btn' value='&#xf002'/>\r\n            </div>\r\n        </div>\r\n\r\n        <!-- ======= Counts Section ======= -->\r\n        <section class=\"counts section-bg\">\r\n            <div class=\"container\">\r\n\r\n                <div class=\"row\">\r\n\r\n                    <div class=\"col-lg-3 col-md-6 text-center\" data-aos=\"fade-up\">\r\n                        <a href=\"/up/main\">\r\n                            <div class=\"count-box\">\r\n                                <i class=\"fa fa-user-circle\" style=\"color: #6192fa;\"></i>\r\n                                <span data-toggle=\"counter-up\">99</span>\r\n                                <p>up主分析</p>\r\n                            </div>\r\n                        </a>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-3 col-md-6 text-center\" data-aos=\"fade-up\" data-aos-delay=\"200\">\r\n                        <a href=\"/hot/main\">\r\n                            <div class=\"count-box\">\r\n                                <i class=\"fa fa-fire\" style=\"color: #f1312b;\"></i>\r\n                                <span data-toggle=\"counter-up\">1</span>\r\n                                <p>热门视频分析</p>\r\n                            </div>\r\n                        </a>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-3 col-md-6 text-center\" data-aos=\"fade-up\" data-aos-delay=\"400\">\r\n                        <a href=\"/guichu/main\">\r\n                            <div class=\"count-box\">\r\n                                <i class=\"fa fa-child\" style=\"color:#fd7e14;\"></i>\r\n                                <span data-toggle=\"counter-up\">5693</span>\r\n                                <p>鬼畜视频分析</p>\r\n                            </div>\r\n                        </a>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-3 col-md-6 text-center\" data-aos=\"fade-up\" data-aos-delay=\"600\">\r\n                        <a href=\"/video/main\">\r\n                            <div class=\"count-box\">\r\n                                <i class=\"fa fa-simplybuilt\" style=\"color: #a78cf8;\"></i>\r\n                                <span data-toggle=\"counter-up\">5</span>\r\n                                <p>番剧分析</p>\r\n                            </div>\r\n                        </a>\r\n                    </div>\r\n\r\n                </div>\r\n\r\n            </div>\r\n        </section><!-- End Counts Section -->\r\n\r\n    </div>\r\n</section><!-- End Our Team Section -->\r\n\r\n\r\n<!-- ======= Footer ======= -->\r\n<footer id=\"footer\">\r\n\r\n    <div class=\"container\">\r\n        <div class=\"copyright\">\r\n            &copy; Copyright <strong><span>大数据A6</span></strong>. All Rights Reserved\r\n        </div>\r\n\r\n    </div>\r\n</footer><!-- End Footer -->\r\n\r\n<a href=\"#\" class=\"back-to-top\"><i class=\"icofont-simple-up\"></i></a>\r\n\r\n<script>\r\n    var oInp = document.getElementById('inp');\r\n    var oBtn = document.getElementById('btn');\r\n\r\n    oBtn.onclick = function () {\r\n        Search();\r\n    }\r\n\r\n    document.onkeydown = function () {\r\n        if (event.keyCode == 13) {\r\n            Search();\r\n        }\r\n    }\r\n\r\n    function Search() {\r\n        var url = 'https://www.baidu.com/s?wd=' + oInp.value;\r\n        window.open(url);\r\n    }\r\n</script>\r\n\r\n\r\n<!-- Vendor JS Files -->\r\n<script src=\"static/assets/vendor/jquery/jquery.min.js\"></script>\r\n<script src=\"static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\r\n<script src=\"static/assets/vendor/jquery.easing/jquery.easing.min.js\"></script>\r\n<script src=\"static/assets/vendor/php-email-form/validate.js\"></script>\r\n<script src=\"static/assets/vendor/jquery-sticky/jquery.sticky.js\"></script>\r\n<script src=\"static/assets/vendor/venobox/venobox.min.js\"></script>\r\n<script src=\"static/assets/vendor/waypoints/jquery.waypoints.min.js\"></script>\r\n<script src=\"static/assets/vendor/counterup/counterup.min.js\"></script>\r\n<script src=\"static/assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>\r\n<script src=\"static/assets/vendor/aos/aos.js\"></script>\r\n\r\n<!-- Template Main JS File -->\r\n<script src=\"static/assets/js/main.js\"></script>\r\n\r\n</body>\r\n\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/index.html b/templates/index.html
+--- a/templates/index.html	
++++ b/templates/index.html	
+@@ -204,7 +204,7 @@
+     }
+ 
+     function Search() {
+-        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
++        var url = 'http://127.0.0.1:5002/search?link=' + oInp.value;
+         window.open(url);
+     }
+ </script>
+Index: .idea/douban_flask.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"Flask\">\r\n    <option name=\"enabled\" value=\"true\" />\r\n  </component>\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7 (env)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n  <component name=\"TemplatesService\">\r\n    <option name=\"TEMPLATE_CONFIGURATION\" value=\"Jinja2\" />\r\n    <option name=\"TEMPLATE_FOLDERS\">\r\n      <list>\r\n        <option value=\"$MODULE_DIR$/templates\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/douban_flask.iml b/.idea/douban_flask.iml
+--- a/.idea/douban_flask.iml	
++++ b/.idea/douban_flask.iml	
+@@ -5,7 +5,7 @@
+   </component>
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.7 (env)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+   <component name="TemplatesService">
+Index: spider/cacu_DeltaT.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spider/cacu_DeltaT.py b/spider/cacu_DeltaT.py
+new file mode 100644
+--- /dev/null	
++++ b/spider/cacu_DeltaT.py	
+@@ -0,0 +1,26 @@
++# -*- codeing = utf-8 -*-
++# @Time :2022/6/22 14:42
++# @Author:Trump
++# @File : cacu_DeltaT.py
++# @Software: PyCharm
++import datetime
++import sys
++timesnap = [0,1,3,6,12,15,18,24,36,48,60,72,sys.maxsize]
++def cacu_DeltaT(VedioTime,danmakuTime):
++    #视频发布时间
++    VT = datetime.datetime.strptime(VedioTime, '%Y-%m-%d %H:%M:%S')
++    #视频弹幕发布时间
++    DT = datetime.datetime.strptime(danmakuTime, '%Y-%m-%d %H:%M:%S')
++    #时间差
++    delta = DT - VT
++    #换算分钟
++    seconds = delta.total_seconds()
++    hours = int(seconds/60/60)
++    for i in range(0,len(timesnap)-1):
++        if(hours>=timesnap[i] and hours<timesnap[i+1]):
++            if hours == 0:
++                return 1
++            if hours==timesnap[i]:
++                return timesnap[i]
++            return timesnap[i+1]
++
+Index: spider/cnt_DeltaT.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spider/cnt_DeltaT.py b/spider/cnt_DeltaT.py
+new file mode 100644
+--- /dev/null	
++++ b/spider/cnt_DeltaT.py	
+@@ -0,0 +1,58 @@
++# -*- codeing = utf-8 -*-
++# @Time :2022/6/23 10:17
++# @Author:nkx
++# @File : cnt_DeltaT.py
++# @Software: PyCharm
++# 1h-3h-6h-12h-15h-18h-24h-36h-48h-60h-72h
++
++from collections import Counter
++
++
++class cnt_DeltaT():
++    vedio_deltaTlist = []
++    cntlist = []
++    timesnap = [1, 3, 6, 12, 15, 18, 24, 36, 48, 60, 72,100]
++
++    def __init__(self, deltaTlist):
++        self.vedio_deltaTlist = deltaTlist
++        self.cntlist = []
++
++    def DeltaT_Processing(self):
++        templist = []
++        flag = 1
++        rcd = []
++        for j in range(len(self.vedio_deltaTlist)):
++            i=self.vedio_deltaTlist[j]
++            #print(i)
++            #print(flag,i[0])
++            if int(i[0]) == flag:
++                rcd.append(i[1])
++                if(j==len(self.vedio_deltaTlist)-1):
++                    templist.append(rcd)
++
++            else:
++                if int(i[0]) - flag > 1:
++                    print("rcd----------[]")
++                    templist.append([])
++                else:
++                    flag = int(i[0])
++                    templist.append(rcd)
++                    print("rcd----------",rcd)
++                    rcd = []
++        print(len(templist))
++        return templist
++
++    def cnt(self):
++        templist = self.DeltaT_Processing()
++        for i in range(len(templist)):
++            cntt = Counter(templist[i])
++            for j in self.timesnap:
++                if j in cntt:
++                    self.cntlist.append([i+1, j, cntt[j]])
++                else:
++                    self.cntlist.append([i+1, j, 0])
++
++    def get_cntDeltaT(self):
++        self.cnt()
++        return self.cntlist
++
+Index: app.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#!/usr/bin/python\r\n# -*- coding: UTF-8 -*-\r\n# Filename: app_test.py\r\n\r\nfrom config import app\r\n\r\nfrom views.index_view import index\r\n# from views.animation_view import animation\r\nfrom views.guichu_view import guichu\r\n# from views.up_view import up\r\nfrom views.video_view import video\r\nfrom views.searchVideo_view import search\r\n# app.register_blueprint(animation, url_prefix=\"/animation\")\r\napp.register_blueprint(guichu, url_prefix=\"/guichu\")\r\napp.register_blueprint(index, url_prefix=\"/\")\r\n# app.register_blueprint(up, url_prefix=\"/up\")\r\napp.register_blueprint(video, url_prefix=\"/video\")\r\napp.register_blueprint(search,url_prefix=\"/search\")\r\n\r\n\r\nif __name__ == '__main__':\r\n    app.run(debug=True)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.py b/app.py
+--- a/app.py	
++++ b/app.py	
+@@ -6,17 +6,17 @@
+ 
+ from views.index_view import index
+ # from views.animation_view import animation
+-from views.guichu_view import guichu
++# from views.guichu_view import guichu
+ # from views.up_view import up
+-from views.video_view import video
++# from views.video_view import video
+ from views.searchVideo_view import search
+ # app.register_blueprint(animation, url_prefix="/animation")
+-app.register_blueprint(guichu, url_prefix="/guichu")
++# app.register_blueprint(guichu, url_prefix="/guichu")
+ app.register_blueprint(index, url_prefix="/")
+ # app.register_blueprint(up, url_prefix="/up")
+-app.register_blueprint(video, url_prefix="/video")
++# app.register_blueprint(video, url_prefix="/video")
+ app.register_blueprint(search,url_prefix="/search")
+ 
+ 
+ if __name__ == '__main__':
+-    app.run(debug=True)
++    app.run(debug=True,port="5002")

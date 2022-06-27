@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>搜索界面</title>
 </head>
+<!--<p>{{data}}</p>-->
 <body>
+<h1>分析</h1>
+<div id="searchVideo_show" class="video_show" style="width:100%;height: 520px">
+    <table class="table2">
+        <tr>
+            <td>图片</td>
+            <td>标题</td>
+            <td>发布时间</td>
+            <td>up主</td>
+            <td>点赞</td>
+            <td>投币</td>
+            <td>收藏</td>
+            <td>转发</td>
+            <td>简介</td>
+            <td>标签</td>
+        </tr>
+        {% for video in data["allinfo"] %}
+        <tr>
+            {# 图片需要显示出来#}
+            <td>
+                <img src="{{video['img']}}" width="100"/>
+            </td>
+            <td>
+                {{video['name']}}
+            </td>
+            <td>{{video['time']}}</td>
+            <td>{{video['up']}}</td>
+            <td>{{video['like']}}</td>
+            <td>{{video['coin']}}</td>
+            <td>{{video['collect']}}</td>
+            <td>{{video['trans']}}</td>
+            <td>{{video['intro']}}</td>
+            <td>{{video['tag']}}</td>
 
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div id="searcomment_keyword" class="comment_Analy" style="width:100%;height: 520px"></div>
+<div id="searcomment10_show" class="comment_show" style="width:100%;height: 520px">
+    <table class="table table-striped">
+        <tr>
+            <td>up主</td>
+            <td>帐号</td>
+            <td>点赞</td>
+            <td>评论</td>
+        </tr>
+
+        {% for comment in data["comment"] %}
+        <tr>
+            <td>{{comment['uname']}}</td>
+            <td>{{comment['mid']}}</td>
+            <td>{{comment['like']}}</td>
+            <td>{{comment['massage']}}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+</div>
+<!--<script>-->
+<!--console.log("link:");-->
+<!--console.log(data);-->
+<!--</script>-->
 </body>
+
+<script src="/static/assets/js/jquery-2.2.1.min.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/common.js"></script>
+
+<script src="/static/assets/js/echart3.js"></script>
+<script src="/static/assets/js/echarts-wordcloud.js"></script>
+
+<script src="/static/assets/js/echarts.min.js"></script>
+<script src="/static/assets/js/dataTool.js"></script>
+<script src="/static/assets/js/china.js"></script>
+<script src="/static/assets/js/tagcanvas.min.js"></script>
+<script src="/static/assets/js/area.js"></script>
+
+<script src="/static/assets/main/searchVideo_view.js">111</script>
 </html>

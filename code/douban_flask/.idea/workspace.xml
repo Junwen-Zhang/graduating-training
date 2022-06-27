@@ -1,128 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad07b35e-64ae-4428-ae6d-eda7e0fc123d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Final_data_excel/reademe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Final_data_excel/reademe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    <list default="true" id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="框架">
+      <change afterPath="$PROJECT_DIR$/spider/cacu_DeltaT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/cnt_DeltaT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/linkAnalys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/spider_videoComment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/main/searchVideo_view.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute/anime_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/anime_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute/guichu_submithour.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/guichu_submithour.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute/up_fans_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/up_fans_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute/up_trend_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/up_trend_count.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbmodel/animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/animation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbmodel/guichu.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/guichu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbmodel/up.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/up.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbmodel/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive" beforeDir="false" afterPath="$PROJECT_DIR$/hive" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/area.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/bmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/echarts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/guichu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/guichu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/tagcanvas.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/tagcanvas.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/animation_tags_analy.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/animation_tags_analy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_animation_area.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_animation_score.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_guichu_submithour.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_submithour.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_guichu_wordcloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_wordcloud.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_most_popular_up_tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_most_popular_up_tags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_up_fans.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_up_fans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/main/show_up_trend.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_up_trend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/animations.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/animations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/transformations.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/counterup/counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/counterup/counterup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/icofont/icofont.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/icofont/icofont.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/jquery-sticky/jquery.sticky.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/jquery-sticky/jquery.sticky.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/vendor/waypoints/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/animation_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animation_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/animation_tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animation_tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bar-simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bar-simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/guichu_length.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guichu_length.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/guichu_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guichu_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show100animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100animation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show100up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show100up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_animation_area.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_area.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_animation_score.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_score.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_guichu_submithour.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_guichu_submithour.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_guichu_wordcloud.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_guichu_wordcloud.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_up_fans.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_up_fans.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show_up_trend.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_up_trend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/echarts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test/testEcharts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test/testEcharts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/up_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/up_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/video_hot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/video_hot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/video_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/video_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCloud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/guichu_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/guichu_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/index_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/up_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/up_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/video_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/video_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-database/bilibili_zjw_0622.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/bilibili_zjw_0622.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-database/video10tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/video10tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-database/鬼畜全部4张表.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-database/鬼畜全部4张表.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up主.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up主.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up主流行趋势.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up主流行趋势.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/2021百大up流行趋势标签统计.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/2021百大up流行趋势标签统计.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/b站番剧汇总3.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/b站番剧汇总3.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/soucedata/123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/soucedata/123.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/全站热门视频的投放时间.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/全站热门视频的投放时间.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/最受欢迎up主热门视频.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/最受欢迎up主热门视频.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/最受欢迎up主视频标签统计.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/最受欢迎up主视频标签统计.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/视频弹幕相关源数据/123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/视频弹幕相关源数据/123.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-excel/鬼畜热门视频的投放时间.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-excel/鬼畜热门视频的投放时间.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../个人工作/lqq/lqq.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/lqq/lqq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../个人工作/zjw/工作日志.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zjw/工作日志.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../个人工作/zq/FirstPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/FirstPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../个人工作/zq/secondPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/secondPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../个人工作/zq/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人工作/zq/spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/bilibili数据分析.cdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/bilibili数据分析.cdm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/bilibili数据分析.pdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/4.示例：数据库设计/bilibili数据分析.pdm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/bilibili数据分析.cdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/bilibili数据分析.cdm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/bilibili数据分析.pdm" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目交付工件/B 精化阶段/bilibili数据分析.pdm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchVideo_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/searchVideo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchVideo_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2B3svIPk2pGG7X2MMG1iBfBIl2l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -132,11 +46,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\summer_project\github\graduating-training\code\douban_flask\spider" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -192,7 +111,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad07b35e-64ae-4428-ae6d-eda7e0fc123d" name="Changes" comment="" />
+      <changelist id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="框架" />
       <created>1656146337700</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -205,7 +124,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1656293295505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="框架" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/guichu_view.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
