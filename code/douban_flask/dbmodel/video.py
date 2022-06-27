@@ -20,17 +20,19 @@ def make_vedio(partition):
     
 def make_vediokeyword(partition):
     class VideoKeyword(db.Model):
-        __tablename__ = "video_" + partition + "_info"
-        id = db.Column(db.INTEGER)
-        keyword = db.Column(db.String(20), primary_key=True)
-        sqrt_count = db.Column(db.Float)
+        __tablename__ = "video_" + partition + "_keyword"
+        __table_args__ = {'extend_existing': True}
+        videoid = db.Column(db.INTEGER, primary_key=True)
+        keyword = db.Column(db.String(10), primary_key=True)
+        count = db.Column(db.Float)
     return VideoKeyword
 
 
 def make_vediotime(partition):
     class VideoTime(db.Model):
-        __tablename__ = "video_" + partition + "_info"
-        id = db.Column(db.INTEGER, primary_key=True)
-        time = db.Column(db.String(20), primary_key=True)
+        __tablename__ = "video_" + partition + "_dt"
+        __table_args__ = {'extend_existing': True}
+        videoid = db.Column(db.INTEGER, primary_key=True)
+        grade = db.Column(db.String(20), primary_key=True)
         count = db.Column(db.Float)
     return VideoTime

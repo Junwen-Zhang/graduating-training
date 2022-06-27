@@ -1,12 +1,13 @@
 # -*- coding:utf-8 -*-
-import json
+import json,math
 
 from flask import Blueprint, jsonify, request, render_template
 
 from config import db
 from dbmodel.video import make_vedio,make_vediokeyword,make_vediotime
 
-transform={"movie":"电影","game":"游戏","music":"音乐","guichu":"鬼畜","food":"美食"}
+# transform2cn={"movie":"电影","game":"游戏","music":"音乐","guichu":"鬼畜","food":"美食"}
+# transform2en={"电影":"movie","游戏":"game","音乐":"music","鬼畜":"guichu","美食":"food"}
 
 """
 本视图专门用于处理ajax数据
@@ -25,6 +26,7 @@ def show100video():
     videos = []
     def build_view_data(item):
         dic = {}
+        dic['id']=item.id
         dic["name"] = item.name
         dic["url"] = item.link
         dic["picture_url"] = item.img
@@ -48,13 +50,14 @@ def show100video():
     [build_view_data(item) for item in data]
     data={}
     data["videos"]=videos
-    data["partition"]=transform[partition]+"分区"
+    # data["partition"] = transform2cn[partition] + "分区"
+    data["partition"]=partition
     return render_template("video_hot.html",data=data)
+
 
 
 @video.route('/time',)
 def videotime():
-<<<<<<< HEAD
     partition=request.args.get('partition')
     videoid=request.args.get('videoid')
     return render_template("show_video_time.html",partition=partition,videoid=videoid)
@@ -63,49 +66,38 @@ def videotime():
 def videotimeAnalyse():
     partition=request.args.get('partition')
     videoid=request.args.get('videoid')
-    data = db.session.query(make_vediotime(partition)).all()
-=======
-<<<<<<< HEAD
-
-    return render_template("show_video_time.html")
-
-=======
-
-    return render_template("show_video_time.html",partition=)
-
->>>>>>> fdd09eccf1f0623fab8bca4b60e3deb474f23a7c
-@video.route('/timeAnalyse/<partition>/<videoid>',methods=['GET'])
-def videotimeAnalyse(partition,videoid):
-    data = db.session.query(videotime(partition)).all()
->>>>>>> 913148aebb2499f08a14ec2b8b47b1b4a5a16453
+    data = db.session.query(make_vediotime(partition)).filter_by(videoid=videoid).all()
+    print(data)
     view_data = {}
-    view_data["x"] = []
-    view_data["y"] = []
+    view_data['x'] = []
+    view_data['y'] = []
     def build_view_data(item):
-        view_data["y"].append(item.count)
-        view_data["x"].append(item.time)
+        view_data['x'].append(item.grade)
+        view_data['y'].append(item.count)
     [build_view_data(item) for item in data]
-    return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
+    # print(view_data)
+    return json.dumps(view_data, ensure_ascii=False)
+
 
 
 @video.route('/keyword')
 def videokeyword():
     partition=request.args.get('partition')
     videoid=request.args.get('videoid')
-    return render_template("show_video_time.html",partition=partition,videoid=videoid)
+    return render_template("show_video_keyword.html",partition=partition,videoid=videoid)
 
 @video.route('/keywordAnalyse',methods=['GET'])
-def videokeywordAnalyse(partition,videoid):
-    partition=request.args.get(partition)
-    videoid=request.args.get(videoid)
-    data = db.session.query(make_vediokeyword(partition)).all()
-    view_data = {}
-    view_data['series']=[]
+def videokeywordAnalyse():
+    partition=request.args.get('partition')
+    videoid=request.args.get('videoid')
+    data = db.session.query(make_vediokeyword(partition)).filter_by(videoid=videoid).all()
+    # print(data)
+    view_data = []
     def build_view_data(item):
         dic={}
         dic['name']=item.keyword   # 这里可以修改中英文
-        dic['value']=item.count
-        view_data['series'].append(dic)
+        dic['value']=math.sqrt(item.count)
+        view_data.append(dic)
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 

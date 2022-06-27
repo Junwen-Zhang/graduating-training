@@ -1,0 +1,1 @@
+search = Blueprint('search', __name__)
