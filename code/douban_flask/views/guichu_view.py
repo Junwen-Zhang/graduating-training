@@ -34,7 +34,7 @@ def guichuLengthAnalyse():
         view_data.append(dic)
 
     [build_view_data(item) for item in data]
-
+    print(view_data)
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 
 
