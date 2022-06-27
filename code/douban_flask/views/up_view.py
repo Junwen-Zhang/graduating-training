@@ -1,13 +1,10 @@
 # -*- coding:utf-8 -*-
 import json
 
-from flask import Blueprint, jsonify, request, render_template
+from flask import Blueprint,render_template
 
 from config import db
-from dbmodel.up import Up
-from dbmodel.up import UpTrendTotal
-from dbmodel.up import UpFansTrend
-from dbmodel.up import MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount
+from dbmodel.up import Up,UpTrendTotal,UpFansTrend,MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount
 
 up = Blueprint('up', __name__)
 
@@ -43,7 +40,8 @@ def getUpTrend():
         dic={}
         dic['name']=item.label
         dic['value']=item.number
-        view_data.append(dic)
+        if(dic['name']!='总视频数'):   # 去除总视频数
+            view_data.append(dic)
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)
 
