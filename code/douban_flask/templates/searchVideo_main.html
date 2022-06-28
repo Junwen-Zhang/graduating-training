@@ -2,13 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>搜索界面</title>
+    <title>视频分析结果</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            margin-left: 50px;
+            margin-right: 910px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #9dc5f6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 16px;
+            color: white;
+        }
+
+        /*li a:hover {
+            background-color: skyblue;
+        }*/
+        li a:hover:not(.active) {
+            background-color: skyblue;
+            color: white;
+        }
+
+        .columnNav ul {
+            list-style-type: none;
+            margin-left: 50px;
+            margin-right: 910px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #9dc5f6;
+        }
+
+        .columnNav ul li {
+            float: left;
+        }
+
+        .columnNav ul li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 16px;
+            color: white;
+        }
+
+        .columnNav ul li a:hover {
+            background-color: skyblue;
+            color: white;
+
+        }
+
+        .columnNav .active a {
+            background-color: #5ba2fa;
+            color: white;
+        }
+
+        {#.columnNav .active{#}
+        {#  background: url(../images/index/line.png) no-repeat center;#}
+
+    </style>
+
+
 </head>
-<!--<p>{{data}}</p>-->
+
 <body>
+
+
 <h1>分析</h1>
-<div id="searchVideo_show" class="video_show" style="width:100%;height: 520px">
-    <table class="table2">
+<div id="sVideo_show" class="v_show" style="width:100%;height: 520px">
+    <table id="table1",class="table table-striped">
         <tr>
             <td>图片</td>
             <td>标题</td>
@@ -21,29 +91,27 @@
             <td>简介</td>
             <td>标签</td>
         </tr>
-        {% for video in data["allinfo"] %}
         <tr>
             {# 图片需要显示出来#}
             <td>
-                <img src="{{video['img']}}" width="100"/>
+                <img src="{{data['allinfo']['img']}}" width="100"/>
             </td>
             <td>
-                {{video['name']}}
+                {{data['allinfo']['name']}}
             </td>
-            <td>{{video['time']}}</td>
-            <td>{{video['up']}}</td>
-            <td>{{video['like']}}</td>
-            <td>{{video['coin']}}</td>
-            <td>{{video['collect']}}</td>
-            <td>{{video['trans']}}</td>
-            <td>{{video['intro']}}</td>
-            <td>{{video['tag']}}</td>
+            <td>{{data['allinfo']['time']}}</td>
+            <td>{{data['allinfo']['up']}}</td>
+            <td>{{data['allinfo']['like']}}</td>
+            <td>{{data['allinfo']['coin']}}</td>
+            <td>{{data['allinfo']['collect']}}</td>
+            <td>{{data['allinfo']['trans']}}</td>
+            <td>{{data['allinfo']['intro']}}</td>
+            <td>{{data['allinfo']['tag']}}</td>
 
         </tr>
-        {% endfor %}
     </table>
 </div>
-<div id="searcomment_keyword" class="comment_Analy" style="width:100%;height: 520px"></div>
+<h1>热门评论</h1>
 <div id="searcomment10_show" class="comment_show" style="width:100%;height: 520px">
     <table class="table table-striped">
         <tr>
@@ -65,24 +133,55 @@
 
     </table>
 </div>
-<!--<script>-->
-<!--console.log("link:");-->
-<!--console.log(data);-->
-<!--</script>-->
-</body>
+<h1>评论词云图</h1>
+<div id="searcomment_keyword" class="comment_Analy" style="width:100%;height: 520px"></div>
 
+<h1>弹幕词云图</h1>
+<div id="chart_search_dmwordcloud" class="main_table t_btn8" style="width:100%;height: 250px"></div>
+<h1>视频浏览量时间分析</h1>
+<div id="chart_search_dmdt" class="main_table t_btn8" style="width:100%;height: 250px"></div>
+<h1>热门词弹幕展示</h1>
+<section id="team" class="team">
+    <div class="container">
+      <section class="counts section-bg">
+        <div class="container">
+          <table class="table table-striped">
+
+              <tr>
+                  <td>弹幕内容</td>
+              </tr>
+
+              {% for d in datad %}
+              <tr>
+                  <td>{{d['text']}}</td>
+
+              </tr>
+
+              {% endfor %}
+
+
+          </table>
+        </div>
+      </section><!-- End Counts Section -->
+
+    </div>
+  </section><!-- End Our Team Section -->
+<!--
+<a href="/search?link=link&data=data" target="_blank">
+    弹幕词云图
+</a>
+-->
+</body>
 <script src="/static/assets/js/jquery-2.2.1.min.js"></script>
 <script src="/static/assets/js/bootstrap.min.js"></script>
 <script src="/static/assets/js/common.js"></script>
-
-<script src="/static/assets/js/echart3.js"></script>
-<script src="/static/assets/js/echarts-wordcloud.js"></script>
-
 <script src="/static/assets/js/echarts.min.js"></script>
 <script src="/static/assets/js/dataTool.js"></script>
 <script src="/static/assets/js/china.js"></script>
 <script src="/static/assets/js/tagcanvas.min.js"></script>
 <script src="/static/assets/js/area.js"></script>
 
-<script src="/static/assets/main/searchVideo_view.js">111</script>
+<script src="/static/assets/js/echart3.js"></script>
+<script src="/static/assets/js/echarts-wordcloud.js"></script>
+<script src="/static/assets/main/searchVideo_view.js"></script>
 </html>

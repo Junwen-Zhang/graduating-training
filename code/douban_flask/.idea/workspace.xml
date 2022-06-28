@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="框架">
-      <change afterPath="$PROJECT_DIR$/spider/cacu_DeltaT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/cnt_DeltaT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/linkAnalys.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/spider_videoComment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/main/searchVideo_view.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compute/anime_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/anime_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/cacu_DeltaT.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/cnt_DeltaT.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/linkAnalys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/spider_videoComment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/main/searchVideo_view.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/searchVideo_view.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/searchVideo_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/searchVideo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchVideo_view.py" afterDir="false" />
     </list>
@@ -46,12 +48,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\summer_project\github\graduating-training\code\douban_flask\spider" />
