@@ -25,8 +25,9 @@ def commentmain():
         for i in keyword:
             if i in item:
                 a['text'] = item
-                view_data.append(a)
-                return 1
+                if a not in view_data:
+                    view_data.append(a)
+                    return 1
         return 0
 
     a = 0
@@ -69,7 +70,7 @@ def CommentAnaly():
 
     def build_view_data2(keyword):
         for item in keyword:
-            if item[1]>5:
+            if item[1]>1:
                 data = {}
                 data['name'] = item[0]
                 data['value'] = item[1]
