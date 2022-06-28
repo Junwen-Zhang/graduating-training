@@ -11,6 +11,7 @@ search = Blueprint('search', __name__)
 @search.route('/main')
 def commentmain():
     link = request.args.get('link')
+    print(link)
 
     global la
     la = linkAnalys.LinkAnls(link)
@@ -25,7 +26,8 @@ def commentmain():
         for i in keyword:
             if i in item:
                 a['text'] = item
-                view_data.append(a)
+                if a not in view_data:
+                    view_data.append(a)
                 return 1
         return 0
 
