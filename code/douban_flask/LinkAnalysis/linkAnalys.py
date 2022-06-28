@@ -342,7 +342,7 @@ class LinkAnls():
         # 筛选后统计
         word_counts = collections.Counter(result_list)
         # 获取前30高频的词
-        word_counts_top30 = word_counts.most_common(80)
+        word_counts_top30 = word_counts.most_common(50)
         #【测试】查看筛词结果
         #print(word_counts_top30)
         self.danmaku_keywords = word_counts_top30
