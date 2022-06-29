@@ -12,7 +12,7 @@
 })(function (data) { //[{name:"",value:1.0}]
     console.log("data!!!");
     console.log(data);
-    var myChart = echarts.init(document.getElementById('searchVideo_show'), 'infographic');
+//    var myChart = echarts.init(document.getElementById('searchVideo_show'), 'infographic');
     var myChart1 = echarts3.init(document.getElementById('searcomment_keyword'), 'infographic');
     var myChart2  =  echarts.init(document.getElementById('chart_search_dmdt'), 'infographic');
     var myChart3 = echarts3.init(document.getElementById('chart_search_dmwordcloud'), 'infographic');
@@ -64,7 +64,6 @@
         title: {
             left:'36%',
             text: '浏览量量化统计',
-            subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
         },
         xAxis: {
             data: dataAxis,

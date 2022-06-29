@@ -197,6 +197,7 @@ class LinkAnls():
                     # print(tag3[0])
                 else:
                     continue
+        self.video_Tags=self.video_Tags.strip()
         return self.video_Tags
 
     def getTime(self,soup):
