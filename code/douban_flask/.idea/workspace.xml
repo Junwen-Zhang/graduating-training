@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="364f5ed1-d376-4750-8e6b-bb8ca6d3f330" name="Changes" comment="">
+=======
+    <list default="true" id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="搜索页面绘制">
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
       <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_length.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/main/show_guichu_submithour.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/main/show_guichu_submithour.js" afterDir="false" />
@@ -17,6 +27,11 @@
       <change beforePath="$PROJECT_DIR$/templates/searchVideo_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo_main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/show_guichu_wordcloud.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_guichu_wordcloud.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/guichu_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/guichu_view.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/compute/anime_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/anime_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchVideo_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo_main.html" afterDir="false" />
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
       <change beforePath="$PROJECT_DIR$/views/searchVideo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchVideo_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +39,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
     <envs>
       <env key="FLASK_APP" value="app" />
@@ -33,11 +49,20 @@
       <map>
         <entry key="FLASK_APP" value="app" />
       </map>
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -46,6 +71,8 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+=======
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,11 +84,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/aaa222/graduating-training/code/douban_flask"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\summer_project\github\graduating-training\code\douban_flask\spider" />
+    </key>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -126,7 +160,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="364f5ed1-d376-4750-8e6b-bb8ca6d3f330" name="Changes" comment="" />
+=======
+      <changelist id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="框架" />
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
       <created>1656146337700</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -136,11 +174,34 @@
       <workItem from="1656376962962" duration="10860000" />
       <workItem from="1656484156713" duration="6032000" />
     </task>
+    <task id="LOCAL-00001" summary="搜索框添加">
+      <created>1656382469429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656382469429</updated>
+    </task>
+    <task id="LOCAL-00002" summary="搜索框添加3">
+      <created>1656398064451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656398064451</updated>
+    </task>
+    <task id="LOCAL-00003" summary="搜索页面绘制">
+      <created>1656472322188</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656472322188</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
       <list>
@@ -152,6 +213,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -163,6 +226,7 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -176,5 +240,24 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1656486321301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="框架" />
+    <MESSAGE value="搜索框添加" />
+    <MESSAGE value="搜索框添加3" />
+    <MESSAGE value="搜索页面绘制" />
+    <option name="LAST_COMMIT_MESSAGE" value="搜索页面绘制" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/views/guichu_view.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> d2d11bec2ac7d572e1f9f81297b8b86409d221d8
   </component>
 </project>
