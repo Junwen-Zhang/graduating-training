@@ -22,14 +22,14 @@
     var option = {
         title: {
             left:'36%',
-            text: '特性示例：渐变色 阴影 点击缩放',
-            subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
+
+
         },
         xAxis: {
             data: dataAxis,
             axisLabel: {
                 inside: true,
-                color: '#fff'
+                color: '#070707'
 
             },
             axisTick: {
@@ -64,17 +64,17 @@
                 itemStyle: {
 
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                        { offset: 0, color: '#83bff6' },
-                        { offset: 0.5, color: '#188df0' },
-                        { offset: 1, color: '#188df0' }
+                        { offset: 0, color: '#C6FFDD' },
+                        { offset: 0.5, color: '#FBD786' },
+                        { offset: 1, color: '#f7797d' }
                     ])
                 },
                 emphasis: {
                     itemStyle: {
                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                            { offset: 0, color: '#2378f7' },
-                            { offset: 0.7, color: '#2378f7' },
-                            { offset: 1, color: '#83bff6' }
+                            { offset: 0, color: '#2ebf91' },
+                            { offset: 0.7, color: '#5ab790' },
+                            { offset: 1, color: '#8af5c8' }
                         ])
                     }
                 },

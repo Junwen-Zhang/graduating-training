@@ -17,9 +17,9 @@ def guichuAnalysis():
     return render_template("guichu_main.html")
 
 
-@guichu.route('/length')
-def guichuLength():
-    return render_template("guichu_length.html")
+# @guichu.route('/length')
+# def guichuLength():
+#     return render_template("guichu_length.html")
 
 
 @guichu.route('/lengthAnalyse', methods=['GET'])
@@ -38,9 +38,9 @@ def guichuLengthAnalyse():
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 
 
-@guichu.route('/submithour')
-def guichuSubmitHour():
-    return render_template("show_guichu_submithour.html")
+# @guichu.route('/submithour')
+# def guichuSubmitHour():
+#     return render_template("show_guichu_submithour.html")
 
 
 @guichu.route('/submitHourAnalyse', methods=['GET'])
@@ -59,9 +59,9 @@ def guichuSubmitHourAnalyse():
     return json.dumps(view_data, ensure_ascii=False)  # 将python对象转化为json对象
 
 
-@guichu.route('/wordcloud')
-def guichuWordcloud():
-    return render_template("show_guichu_wordcloud.html")
+# @guichu.route('/wordcloud')
+# def guichuWordcloud():
+#     return render_template("show_guichu_wordcloud.html")
 
 
 @guichu.route('/wordcloudAnalyse', methods=['GET'])
