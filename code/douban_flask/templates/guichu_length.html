@@ -1,25 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>鬼畜视频时长分析</title>
+    <meta charset="utf-8">
+
+
+    <title>bilibili网站数据分析</title>
+
+
+    <style>
+        .search-box {
+            font-family: FontAwesome;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            height: 40px;
+            border: 10px;
+            border-radius: 40px;
+            padding: 10px;
+            opacity: 1;
+            transition-delay: 99999999s;
+            transition-duration: 1s;
+        }
+
+        .search-box:hover > .search-txt {
+            width: 240px;
+            padding: 0px;
+        }
+
+        .search-box:hover > .search-btn {
+            color: white;
+            background: black;
+        }
+
+        .search-btn {
+            transition: 0.5s;
+            font-family: FontAwesome;
+            font-size: 25px;
+            color: black;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border: 10px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: block;
+
+        }
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: rgb(51, 159, 150);
+            font-size: 16px;
+            transition: 0.6s;
+            line-height: 50px;
+            width: 0px;
+        }
+        @keyframes flash {
+            50% {
+                transform: scale(1.5);
+            }
+            80% {
+                transform: rotate(-60deg);
+            }
+            100% {
+                transform: rotate(30deg);
+            }
+        }
+
+        html:hover .search-box {
+            opacity: 1;
+            transition-delay: 0s;
+            transition-duration: 0s;
+        }
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Favicons -->
+    <link href="static/assets/img/favicon.png" rel="icon">
+    <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/assets/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-<h1>鬼畜视频时长分析</h1>
-<div id="chart_guichu_length" class="main_table t_btn8" style="width:100%;height: 250px"></div>
+
+
+
+<!-- ======= Our Team Section ======= -->
+<section id="team" class="team">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>bilibili网站数据分析</h2>
+            <div class="search-box">
+                <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+                <input class="search-btn" type='button' id='btn' value='&#xf002'/>
+            </div>
+        </div>
+
+        <!-- ======= Counts Section ======= -->
+        <section class="counts section-bg">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+                        <a href="/up/main">
+                            <div class="count-box">
+                                <i class="fa fa-user-circle" style="color: #6192fa;"></i>
+                                <span data-toggle="counter-up">99</span>
+                                <p>up主分析</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <a href="/hot/main">
+                            <div class="count-box">
+                                <i class="fa fa-fire" style="color: #f1312b;"></i>
+                                <span data-toggle="counter-up">1</span>
+                                <p>热门视频分析</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                        <a href="/guichu/main">
+                            <div class="count-box">
+                                <i class="fa fa-child" style="color:#fd7e14;"></i>
+                                <span data-toggle="counter-up">5693</span>
+                                <p>鬼畜视频分析</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+                        <a href="/video/main">
+                            <div class="count-box">
+                                <i class="fa fa-simplybuilt" style="color: #a78cf8;"></i>
+                                <span data-toggle="counter-up">5</span>
+                                <p>番剧分析</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Counts Section -->
+
+    </div>
+</section><!-- End Our Team Section -->
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>大数据A6</span></strong>. All Rights Reserved
+        </div>
+
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<script>
+    var oInp = document.getElementById('inp');
+    var oBtn = document.getElementById('btn');
+
+    oBtn.onclick = function () {
+        Search();
+    }
+
+    document.onkeydown = function () {
+        if (event.keyCode == 13) {
+            Search();
+        }
+    }
+
+    function Search() {
+        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+        window.open(url);
+    }
+</script>
+<script>
+    var video= document.getElementById('v1');
+    video.playbackRate = 0.5;
+</script>
+
+<!-- Vendor JS Files -->
+<script src="static/assets/vendor/jquery/jquery.min.js"></script>
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="static/assets/vendor/php-email-form/validate.js"></script>
+<script src="static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="static/assets/vendor/venobox/venobox.min.js"></script>
+<script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="static/assets/vendor/counterup/counterup.min.js"></script>
+<script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/assets/js/main.js"></script>
 
 </body>
-<script src="/static/assets/js/jquery-2.2.1.min.js"></script>
-<script src="/static/assets/js/bootstrap.min.js"></script>
-<script src="/static/assets/js/common.js"></script>
-
-
-<script src="/static/assets/js/echarts.min.js"></script>
-<script src="/static/assets/js/dataTool.js"></script>
-<script src="/static/assets/js/china.js"></script>
-<script src="/static/assets/js/tagcanvas.min.js"></script>
-<script src="/static/assets/js/area.js"></script>
-<script src="/static/assets/main/show_guichu_length.js"></script>
-
 
 </html>

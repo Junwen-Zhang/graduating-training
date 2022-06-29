@@ -34,5 +34,3 @@ def get100TagsDict():
         dict.update({item: taglist.count(item)})
     # print(dict)
     return dict
-
-get100TagsDict()
