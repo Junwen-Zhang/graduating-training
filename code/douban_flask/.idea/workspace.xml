@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="搜索框添加">
+    <list default="true" id="e3f8331e-a7e9-4db9-be61-3058f787b947" name="Changes" comment="搜索页面绘制">
+      <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_6_27_10_46__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compute/anime_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/anime_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchVideo_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/searchVideo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchVideo_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "F:/aaa222/graduating-training/code/douban_flask"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\summer_project\github\graduating-training\code\douban_flask\spider" />
@@ -116,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656382469429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="搜索框添加3">
+      <created>1656398064451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656398064451</updated>
+    </task>
+    <task id="LOCAL-00003" summary="搜索页面绘制">
+      <created>1656472322188</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656472322188</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +159,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="框架" />
     <MESSAGE value="搜索框添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="搜索框添加" />
+    <MESSAGE value="搜索框添加3" />
+    <MESSAGE value="搜索页面绘制" />
+    <option name="LAST_COMMIT_MESSAGE" value="搜索页面绘制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

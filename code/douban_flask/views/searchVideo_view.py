@@ -8,6 +8,11 @@ import math
 """
 search = Blueprint('search', __name__)
 
+
+@search.route('/box')
+def searchVideo():
+    return render_template("searchVideo.html")
+
 @search.route('/main')
 def commentmain():
     link = request.args.get('link')
