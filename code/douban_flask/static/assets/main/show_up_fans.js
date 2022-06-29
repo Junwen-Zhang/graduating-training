@@ -10,8 +10,8 @@
 })(function (data) {
     var myChart = echarts.init(document.getElementById('chart_up_fans'), 'infographic');
     const countryColors = {
-        0:'#f00',
-        1:'#00f',
+        0:'#CD5C5C',
+        1:'#4682B4',
     };
     // 20个up主的名字列表，用于y轴显示
     var nameList = [];
@@ -35,6 +35,14 @@
     var index = 2;
     var option = {
         xAxis: {
+            splitLine: {
+                lineStyle:{
+                   color: ['#C0C0C0'],
+                   width: 1,
+                   type: 'solid'
+                },
+                show: true
+            },
             max: 'dataMax',
             animationDurationUpdate: 2100,
         },
@@ -58,8 +66,27 @@
         series: [
             {
                 realtimeSort: true,
-                name: 'X',
+                name: '正增长粉丝数',
                 type: 'bar',
+                color: ['#CD5C5C'],
+                data: data1_abs,
+                label: {
+                    show: true,
+                    position: 'right',
+                    valueAnimation: true
+                },
+                itemStyle: {
+                    color: function (param) {
+                        return countryColors[negative[param['dataIndex']]];
+                    }
+                },
+            },
+            {
+                barGap: -1,
+                realtimeSort: true,
+                name: '负增长粉丝数',
+                type: 'bar',
+                color: ['#4682B4'],
                 data: data1_abs,
                 label: {
                     show: true,
@@ -89,7 +116,11 @@
             return;
         }
         for (var i = 0; i < data.length; ++i) {   // 下标区分了up主
+<<<<<<< HEAD
             data1[i] += data[i][index];    //粉丝增量
+=======
+                data1[i] += data[i][index];    //粉丝增量
+>>>>>>> 962e2362d293a0b2d1e82434eaeaec9caec31c2a
                 if(data1[i]<0){
                     negative[i]=1;   // 负数柱形条颜色有所变化
                     data1_abs[i]=-data1[i];   // 变为正数显示

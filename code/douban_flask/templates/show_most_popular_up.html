@@ -6,30 +6,30 @@
     <title>最受欢迎up主</title>
 </head>
 <body>
-<h1>最受欢迎up主</h1>
-<table class="table table-striped">
-    {% for up in ups %}
-    <tr>
+{#<h1>最受欢迎up主</h1>#}
+{#<table class="table table-striped">#}
+{#    {% for up in ups %}#}
+{#    <tr>#}
         {#               图片需要显示出来,点击图片跳转到该up主的主页#}
-        <td>
-            <img src="{{ up['picture_url'] }}" href="{{ up['url'] }}" target="_blank"/>
-        </td>
-        <td>
-            up主昵称{{ up['name'] }}
-        </td>
-        <td>uid{{ up['uid'] }}</td>
-        <td>粉丝数{{ up['fans'] }}</td>
-        <td>点赞数{{ up['likes'] }}</td>
-        <td>视频数0</td>
-        <td>播放数{{ up['views'] }}</td>
-        <td>
-            {% for section in up['section'] %}
-            <div>{{ section }}</div>
-            {% endfor %}
-        </td>
-    </tr>
-    {% endfor %}
-</table>
+{#        <td>#}
+{#            <img src="{{ up['picture_url'] }}" href="{{ up['url'] }}" target="_blank"/>#}
+{#        </td>#}
+{#        <td>#}
+{#            up主昵称{{ up['name'] }}#}
+{#        </td>#}
+{#        <td>uid{{ up['uid'] }}</td>#}
+{#        <td>粉丝数{{ up['fans'] }}</td>#}
+{#        <td>点赞数{{ up['likes'] }}</td>#}
+{#        <td>视频数0</td>#}
+{#        <td>播放数{{ up['views'] }}</td>#}
+{#        <td>#}
+{#            {% for section in up['section'] %}#}
+{#            <div>{{ section }}</div>#}
+{#            {% endfor %}#}
+{#        </td>#}
+{#    </tr>#}
+{#    {% endfor %}#}
+{#</table>#}
 <div id="chart_most_popular_tags" class="main_table t_btn8" style="width:100%;height:500px"></div>
 <div>
     最受欢迎up主播放量前十视频

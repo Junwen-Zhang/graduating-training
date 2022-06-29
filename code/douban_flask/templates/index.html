@@ -123,6 +123,7 @@
             <div class="search-box">
                 <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
                 <input class="search-btn" type='button' id='btn' value='&#xf002'/>
+<!--                <a href="/search/main?link=BV1rY4y1J7Mt">aaaa</a>-->
             </div>
         </div>
 
@@ -209,7 +210,7 @@
     }
 
     function Search() {
-        var url = 'https://www.baidu.com/s?wd=' + oInp.value;
+        var url = '/search/main?link=' + oInp.value;
         window.open(url);
     }
 </script>
