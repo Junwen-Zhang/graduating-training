@@ -18,36 +18,23 @@
             trigger: 'item'
         },
         legend: {
-            top: '5%',
-            left: 'center'
+            orient: 'vertical',
+            left: 'left',
+            show:false
         },
         series: [
             {
                 name: 'Access From',
                 type: 'pie',
                 radius: ['40%', '70%'],
-
-                avoidLabelOverlap: false,
-                itemStyle: {
-                    borderRadius: 10,
-                    borderColor: '#fff',
-                    borderWidth: 2
-                },
-                label: {
-                    show: false,
-                    position: 'center'
-                },
+                data: data['series1'],
                 emphasis: {
-                    label: {
-                        show: true,
-                        fontSize: '40',
-                        fontWeight: 'bold'
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
                     }
-                },
-                labelLine: {
-                    show: false
-                },
-                data: data['series1']
+                }
             }
         ]
     };
@@ -57,8 +44,10 @@
             trigger: 'item'
         },
         legend: {
-            top: '5%',
+            // orient: 'vertical',
+            top: '1%',
             left: 'center'
+
         },
         series: [
             {
@@ -69,7 +58,7 @@
                 itemStyle: {
                     borderRadius: 10,
                     borderColor: '#fff',
-                    borderWidth: 2
+                    borderWidth: 0.5
                 },
                 label: {
                     show: false,
@@ -90,9 +79,8 @@
         ]
     };
 
-     var maskImage = new Image();
-     maskImage.src = data['maskImage']
-    // maskImage.src = 'D:/大三/小学期/term/graduating-training/code/douban_flask/static/assets/img/tree.jpg'
+    var maskImage = new Image();
+    maskImage.src = data['maskImage']
     var option2 = {
         series: [{
             type: 'wordCloud',
@@ -124,11 +112,6 @@
             data: data['series1']
         }]
     };
-
-// 词云图
-//     var maskImage = new Image();
-//     maskImage.src = 'img/tree.png';
-
 
     myChart.setOption(option);
     window.addEventListener("resize", function () {

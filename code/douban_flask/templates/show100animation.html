@@ -3,6 +3,19 @@
 <head>
     <meta name="referrer" content="no-referrer">
     <title>播放量Top100番剧</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Bootstrap Styles-->
+    <link href="/static/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="/static/assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Morris Chart Styles-->
+    <link href="/static/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="/static/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="/static/assets/js/Lightweight-Chart/cssCharts.css">
 </head>
 <body>
 <div id="wrapper">
@@ -211,6 +224,7 @@
         </li>
     </ul>
     <!--/. NAV TOP  -->
+    {#导航栏#}
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
@@ -243,16 +257,16 @@
                             class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="/animation/show100animation">排行榜</a>
+                            <a href="/animation/show100animation" class="active-menu">排行榜</a>
                         </li>
                         <li>
                             <a href="/animation/animeTags">风格统计</a>
                         </li>
                         <li>
-                            <a href="/animation/score">评分统计<span class="fa arrow"></span></a>
+                            <a href="/animation/score">评分统计</a>
                         </li>
                         <li>
-                            <a href="/animation/area">地区统计<span class="fa arrow"></span></a>
+                            <a href="/animation/area">地区统计</a>
                         </li>
                     </ul>
                 </li>
@@ -265,56 +279,112 @@
 
     </nav>
     <!-- /. NAV SIDE  -->
-
-
-    <!-- /. PAGE WRAPPER  -->
-</div>
-
-
-<section id="team" class="team">
-    <div class="container">
-        <div class="section-title">
-            <h2>播放量Top100番剧</h2>
+    {#    跳转的页面的页面内容#}
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                番剧排行榜Top100
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#">番剧</a></li>
+                <li><a href="#">排行榜</a></li>
+            </ol>
         </div>
-        <section class="counts section-bg">
+        <section id="team" class="team">
+
             <div class="container">
-                <table class="table table-striped">
+                <div class="section-title">
 
-                    <tr>
-                        <td>番剧图片</td>
-                        <td>剧名</td>
-                        <td>追番人数(万)</td>
-                        <td>集数</td>
-                        <td>评分</td>
-                        <td>标签</td>
-                        <td>简介</td>
-                    </tr>
-
-                    {% for fanju in fanjus['series'] %}
-                        <tr>
-                            {#               图片需要显示出来#}
-                            <td>
-                                <img src="{{ fanju[0]['picture_url'] }}"/>
-                            </td>
-                            <td>
-                                <a href="{{ fanju[0]['url'] }}" target="_blank">
-                                    {{ fanju[0]['name'] }}
-                                </a>
-                            </td>
-                            <td>{{ fanju[0]['followers_number'] }}</td>
-                            <td>{{ fanju[0]['episodes'] }}</td>
-                            <td>{{ fanju[0]['score'] }}</td>
-                            <td>{{ fanju[0]['label'] }}</td>
-                            <td>{{ fanju[0]['introduction'] }}</td>
-                        </tr>
-
-                    {% endfor %}
+                </div>
+                <section class="counts section-bg">
+                    <div class="container">
+                        {% for fanju in fanjus['series'] %}
+                            {#                            一个番剧一个块#}
+                            {#                            col-xs-12:width:100%,col-sm-6:50%,col-md-3:25%#}
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <div class="card horizontal cardIcon waves-effect waves-dark one-animation-div vague-background">
 
 
-                </table>
+                                    <div class="left-animation-img-div">
+                                        <img src="{{ fanju[0]['picture_url'] }}" class="animation-img"/>
+                                    </div>
+                                    <div class="right-animation-information-div">
+                                        <div class="card-content horizon1 animation-line1">
+                                            <div class="animation-title">
+                                                <a href="{{ fanju[0]['url'] }}" target="_blank">
+                                                    {{ fanju[0]['name'] }}
+                                                </a>
+                                            </div>
+                                            <div class="animation-tags horizon1 by-right">
+                                                {% for tag in fanju[0]['tags'] %}
+                                                    <div class="animation-tag left-right tag-style">
+                                                        {{ tag }}
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                        <div class="horizon1 media-info-count">
+                                            <div class="media-info-count-item media-info-count-item-play">
+                                                <span class="media-info-label">总播放</span>
+                                                <em>{{ fanju[0]['views'] }}</em>
+
+                                            </div>
+                                            <div class="media-info-count-item media-info-count-item-play">
+                                                <span class="media-info-label">追番人数</span>
+                                                <em>{{ fanju[0]['followers_number'] }}万</em>
+                                            </div>
+                                            <div class="media-info-count-item media-info-count-item-play">
+                                                <span class="media-info-label">地区</span>
+                                                <em>{{ fanju[0]['area'] }}</em>
+                                            </div>
+                                            <div class="media-info-score-content">
+                                                {#                                                评分#}
+                                                {{ fanju[0]['score'] }}
+                                            </div>
+                                        </div>
+                                        <div class="media-info-count">
+                                            {#                                            上映时间#}
+                                            {{ fanju[0]['release_time'] }}
+                                            {{ fanju[0]['episodes'] }}
+                                        </div>
+                                        <div class="media-info-count introduction">
+                                            简介:{{ fanju[0]['introduction'] }}
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                </section><!-- End Counts Section -->
+
             </div>
-        </section><!-- End Counts Section -->
+        </section><!-- End Our Team Section -->
 
+        <!-- /. PAGE WRAPPER  -->
     </div>
-</section><!-- End Our Team Section -->
+    <script src="/static/assets/js/jquery-2.2.1.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+
+    <script src="/static/assets/materialize/js/materialize.min.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="/static/assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="/static/assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="/static/assets/js/morris/morris.js"></script>
+
+
+    <script src="/static/assets/js/easypiechart.js"></script>
+    <script src="/static/assets/js/easypiechart-data.js"></script>
+
+    <script src="/static/assets/js/Lightweight-Chart/jquery.chart.js"></script>
+
+    <!-- Custom Js -->
+    <script src="/static/assets/js/custom-scripts.js"></script>
+</div>
 </body>

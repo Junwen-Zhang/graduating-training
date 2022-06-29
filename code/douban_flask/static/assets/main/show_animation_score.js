@@ -11,10 +11,6 @@
     var myChart = echarts.init(document.getElementById('chart_animation_score'), 'infographic');
 
     var option = {
-        title: {
-            text: 'Distribution of Electricity',
-            subtext: 'Fake Data'
-        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {
@@ -45,64 +41,29 @@
         visualMap: {
             show: false,
             dimension: 0,
-            // pieces: [
-            //     {
-            //         lte: 6,
-            //         color: 'green'
-            //     },
-            //     {
-            //         gt: 6,
-            //         lte: 8,
-            //         color: 'red'
-            //     },
-            //     {
-            //         gt: 8,
-            //         lte: 14,
-            //         color: 'green'
-            //     },
-            //     {
-            //         gt: 14,
-            //         lte: 17,
-            //         color: 'red'
-            //     },
-            //     {
-            //         gt: 17,
-            //         color: 'green'
-            //     }
-            // ]
         },
         series: [
             {
-                name: 'Electricity',
+                name: '数量',
                 type: 'line',
                 smooth: true,
                 // prettier-ignore
                 data: data['y'],
                 markArea: {
                     itemStyle: {
-                        color: 'rgba(255, 173, 177, 0.4)'
+                        color: 'rgb(48,204,123)'
                     },
-                    // data: [
-                    //     [
-                    //         {
-                    //             name: 'Morning Peak',
-                    //             xAxis: '07:30'
-                    //         },
-                    //         {
-                    //             xAxis: '10:00'
-                    //         }
-                    //     ],
-                    //     [
-                    //         {
-                    //             name: 'Evening Peak',
-                    //             xAxis: '17:30'
-                    //         },
-                    //         {
-                    //             xAxis: '21:15'
-                    //         }
-                    //     ]
-                    // ]
-                }
+
+                },
+                itemStyle: {
+                    normal: {
+                        // color: "#386db3",//折线点的颜色
+                        lineStyle: {
+                            color: "rgb(48,204,123)"//折线的颜色
+                        }
+                    }
+                },
+
             }
         ]
     };

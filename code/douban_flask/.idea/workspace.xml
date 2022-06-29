@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad07b35e-64ae-4428-ae6d-eda7e0fc123d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/assets/img/background.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/js/chart-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/js/chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery-1.10.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/background.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/show_animation_tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Final_data_excel/reademe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Final_data_excel/reademe.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
@@ -25,18 +20,24 @@
       <change beforePath="$PROJECT_DIR$/dbmodel/up.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/up.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbmodel/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbmodel/video.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hive" beforeDir="false" afterPath="$PROJECT_DIR$/hive" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/custom-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/area.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/bmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/bmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/chart-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/chart-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/chart.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/custom-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/dataTables/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/dataTables/dataTables.bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/dataTables/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/dataTables/dataTables.bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/dataTables/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/dataTables/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/echarts.common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/echarts.common.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/echarts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/guichu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/guichu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/jquery-1.10.2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/morris/morris-0.4.3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/morris/morris-0.4.3.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/js/morris/morris.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/morris/morris.js" afterDir="false" />
@@ -79,8 +80,8 @@
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/vendor/waypoints/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/animation_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animation_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/animation_tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/animation_tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/animation_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show_animation_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/animation_tags.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bar-simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bar-simple.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/guichu_length.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guichu_length.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/guichu_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guichu_main.html" afterDir="false" />
@@ -217,7 +218,12 @@
       <option name="presentableId" value="Default" />
       <updated>1656146337700</updated>
       <workItem from="1656146340665" duration="2633000" />
-      <workItem from="1656290543526" duration="7601000" />
+      <workItem from="1656290543526" duration="9785000" />
+      <workItem from="1656312211187" duration="10771000" />
+      <workItem from="1656376357891" duration="10780000" />
+      <workItem from="1656397991075" duration="8937000" />
+      <workItem from="1656462948362" duration="6516000" />
+      <workItem from="1656484352615" duration="2419000" />
     </task>
     <servers />
   </component>
@@ -225,6 +231,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1656295409967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/douban_flask$app.coverage" NAME="app Coverage Results" MODIFIED="1656484653552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

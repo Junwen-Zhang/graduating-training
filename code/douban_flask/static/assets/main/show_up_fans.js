@@ -89,9 +89,7 @@
             return;
         }
         for (var i = 0; i < data.length; ++i) {   // 下标区分了up主
-            if (i == 0) {
-            } else {
-                data1[i] += data[i][index];    //粉丝增量
+            data1[i] += data[i][index];    //粉丝增量
                 if(data1[i]<0){
                     negative[i]=1;   // 负数柱形条颜色有所变化
                     data1_abs[i]=-data1[i];   // 变为正数显示
@@ -100,8 +98,6 @@
                     negative[i]=0;
                     data1_abs[i]=data1[i];
                 }
-
-            }
         }
         index++;
         myChart.setOption(option);
