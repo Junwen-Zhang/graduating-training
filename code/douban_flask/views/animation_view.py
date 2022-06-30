@@ -14,9 +14,9 @@ from compute.anime_tags import getTagsDict, get100TagsDict
 """
 animation = Blueprint('animation', __name__)
 
-@animation.route('/main')
-def animationAnalysis():
-    return render_template("show_animation_main.html")
+# @animation.route('/main')
+# def animationAnalysis():
+#     return render_template("show_animation_main.html")
 
 @animation.route('/show100animation')
 def show100animation():

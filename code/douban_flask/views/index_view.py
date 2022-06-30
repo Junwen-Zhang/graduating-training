@@ -9,4 +9,4 @@ index = Blueprint('index', __name__)
 
 @index.route('/', endpoint="index")
 def login():
-    return render_template("index.html")
+    return render_template("searchVideo.html")

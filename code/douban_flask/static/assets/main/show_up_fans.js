@@ -116,11 +116,7 @@
             return;
         }
         for (var i = 0; i < data.length; ++i) {   // 下标区分了up主
-<<<<<<< HEAD
-            data1[i] += data[i][index];    //粉丝增量
-=======
                 data1[i] += data[i][index];    //粉丝增量
->>>>>>> 962e2362d293a0b2d1e82434eaeaec9caec31c2a
                 if(data1[i]<0){
                     negative[i]=1;   // 负数柱形条颜色有所变化
                     data1_abs[i]=-data1[i];   // 变为正数显示
