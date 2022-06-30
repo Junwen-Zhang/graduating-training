@@ -16,7 +16,7 @@ animation = Blueprint('animation', __name__)
 
 @animation.route('/main')
 def animationAnalysis():
-    return render_template("animation_main.html")
+    return render_template("show_animation_main.html")
 
 @animation.route('/show100animation')
 def show100animation():
@@ -31,12 +31,22 @@ def show100animation():
         dic["followers_number"] = item.followers_number
         dic["episodes"] = item.episodes
         dic["score"] = item.score
-        dic["label"]=item.label
+        tags=item.label.split(' ')
+        if(tags[len(tags)-1]==''):
+            tags=tags[0:len(tags)-1]
+        if(len(tags)>4):    # 最多只显示四个标签
+            dic["tags"]=tags[0:4]
+        else:
+            dic["tags"]=tags
         dic["introduction"]=item.introduction
+        dic["release_time"]=item.release_time
+        dic["views"]=item.views
+        dic["area"]=item.area
         view_data["series"].append([dic])
     for i in range(100):
         item=data[i]
         build_view_data(item)
+    print(view_data)
     return render_template("show100animation.html",fanjus=view_data)
 
 @animation.route('/score')
@@ -103,4 +113,4 @@ def animationTagsAnalyse():
 
 @animation.route('/animeTags')
 def animationTags():
-    return render_template("animation_tags.html")
+    return render_template("show_animation_tags.html")

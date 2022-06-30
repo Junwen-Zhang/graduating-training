@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>搜索视频</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/assets/materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Bootstrap Styles-->
+    <link href="../static/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="../static/assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="../static/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../static/assets/js/Lightweight-Chart/cssCharts.css">
+
+    <style>
+        .search-box {
+            font-family: FontAwesome;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            background: #ffffff;
+            height: 40px;
+            border: 10px;
+            border-radius: 40px;
+            padding: 10px;
+            opacity: 0;
+            transition-delay: 99999999s;
+            transition-duration: 1s;
+        }
+
+
+        .search-box:hover > .search-btn {
+            color: white;
+            background: black;
+        }
+
+        .search-btn {
+            position:absolute;
+            margin-left: 500px;
+<!--            top: 1%;-->
+            transition: 0.5s;
+            font-family: FontAwesome;
+            font-size: 25px;
+            color: black;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border: 10px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: rgb(51, 159, 150);
+            font-size: 16px;
+            transition: 0.6s;
+            line-height: 50px;
+            width: 0px;
+        }
+
+
+        html:hover .search-box {
+            opacity: 1;
+            transition-delay: 0s;
+            transition-duration: 0s;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body style="overflow:hidden">
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand waves-effect waves-dark" href="/"><i class="large material-icons"></i>
+                <strong>bilibili数据分析</strong></a>
+        </div>
+    </nav>
+
+    <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a  href="/"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> UI Elements</a>
+                    </li>
+					<li>
+                        <a href="/guichu/main" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i> 鬼畜分析</a>
+                    </li>
+                    <li>
+                        <a href="tab-panel.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                    </li>
+
+                    <li>
+                        <a href="table.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> Responsive Tables</a>
+                    </li>
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="/searchVideo" class="waves-effect waves-dark"> 搜索视频 </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="empty.html" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper" style="background-image:linear-gradient(to top, #4568DC, #B06AB3); overflow:hidden">
+        <div class="header">
+            <h1 class="page-header">
+                视频搜索
+            </h1>
+        </div>
+        <div id="page-inner">
+                <div class="col-md-6 search-box">
+                    <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
+                    <input class="search-btn" type='button' id='btn' value='&#xf002'/>
+                </div>
+        </div>
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+
+<script>
+    var oInp = document.getElementById('inp');
+    var oBtn = document.getElementById('btn');
+
+    oBtn.onclick = function () {
+        Search();
+    }
+
+    document.onkeydown = function () {
+        if (event.keyCode == 13) {
+            Search();
+        }
+    }
+
+    function Search() {
+        var url = '/search/main?link=' + oInp.value;
+        window.open(url);
+    }
+</script>
+
+<script src="/static/assets/js/jquery-2.2.1.min.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/common.js"></script>
+
+
+<script src="/static/assets/js/echarts.min.js"></script>
+<script src="/static/assets/js/dataTool.js"></script>
+<script src="/static/assets/js/china.js"></script>
+<script src="/static/assets/js/tagcanvas.min.js"></script>
+<script src="/static/assets/js/area.js"></script>
+
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+{#<script src="../static/assets/js/jquery-1.10.2.js"></script>#}
+
+<!-- Bootstrap Js -->
+<script src="../static/assets/js/bootstrap.min.js"></script>
+
+<script src="../static/assets/materialize/js/materialize.min.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="../static/assets/js/jquery.metisMenu.js"></script>
+<!-- Morris Chart Js -->
+{#<script src="../static/assets/js/morris/raphael-2.1.0.min.js"></script>#}
+{#<script src="../static/assets/js/morris/morris.js"></script>#}
+
+
+<script src="../static/assets/js/easypiechart.js"></script>
+<script src="../static/assets/js/easypiechart-data.js"></script>
+</body>
+</html>

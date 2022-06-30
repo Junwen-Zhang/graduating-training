@@ -15,6 +15,7 @@
       trigger: 'item'
 
     },
+    color:["#5ba2fa","#a78cf8","#faa9c8","#f6d966","#9dc5f6","#ff9999","#66cc99"],
     legend: {
       top: '90%',
       left: 'center'

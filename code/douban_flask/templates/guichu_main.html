@@ -1,106 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="utf-8"/>
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>鬼畜分析</title>
 
-    <meta charset="utf-8">
-    <title>鬼畜</title>
-
-    <style type="text/css">
-        ul {
-            list-style-type: none;
-            margin-left: 50px;
-            margin-right: 910px;
-            padding: 0px;
-            overflow: hidden;
-            background-color: #9dc5f6;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            padding: 15px 16px;
-            color: white;
-        }
-
-        /*li a:hover {
-            background-color: skyblue;
-        }*/
-        li a:hover:not(.active) {
-            background-color: skyblue;
-            color: white;
-        }
-
-        .columnNav ul {
-            list-style-type: none;
-            margin-left: 50px;
-            margin-right: 910px;
-            padding: 0px;
-            overflow: hidden;
-            background-color: #9dc5f6;
-        }
-
-        .columnNav ul li {
-            float: left;
-        }
-
-        .columnNav ul li a {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            padding: 15px 16px;
-            color: white;
-        }
-
-        .columnNav ul li a:hover {
-            background-color: skyblue;
-            color: white;
-
-        }
-
-        .columnNav .active a {
-            background-color: #5ba2fa;
-            color: white;
-        }
-
-        {#.columnNav .active{#}
-        {#  background: url(../images/index/line.png) no-repeat center;#}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/assets/materialize/css/materialize.min.css" media="screen,projection"/>
+    <!-- Bootstrap Styles-->
+    <link href="../static/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="../static/assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="../static/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../static/assets/js/Lightweight-Chart/cssCharts.css">
 
 
-
-
-    </style>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
 
 <body>
-<div class="columnNav">
-    <ul class="tabs">
-        <li><a class="active" href="#tab1">时长分析</a></li>
-        <li><a href="#tab2">投放时间分析</a></li>
-        <li><a href="#tab3">词云图</a></li>
-    </ul>
-</div>
-<div class="columnContent">
-    <div class="c-tab-body">
-        <div id="tab1" class="tab_content">
-            <div id="chart_guichu_length" class="chart" style="width: 100%; height: 300px"></div>
+
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand waves-effect waves-dark" href="/index"><i class="large material-icons"></i>
+                <strong>bilibili数据分析</strong></a>
+
+            {#            <div class="search-box">#}
+            {##}
+            {#                <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>#}
+            {#<input class="search-btn" type='button' id='btn' value='&#xf002' />#}
+            {#            </div>#}
+
         </div>
-        <div id="tab2" class="tab_content">
-            <div id="chart_guichu_submithour" class="chart"
-                 style="width: 1000px; height: 300px;margin-left: 150px;margin-top: 80px" ;></div>
-        </div>
-        <div id="tab3" class="tab_content">
-            <div id="chart_guichu_wordcloud" class="chart"
-                 style="width: 500px; height: 300px; margin-left: 400px;margin-top: 80px"></div>
+    </nav>
+
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="/" class="waves-effect waves-dark"><i class="fa fa-dashboard"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> UI Elements</a>
+                </li>
+                <li>
+                    <a href="/guichu/main" class="active-menu waves-effect waves-dark"><i
+                            class="fa fa-bar-chart-o"></i> 鬼畜分析</a>
+                </li>
+                <li>
+                    <a href="tab-panel.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Tabs & Panels</a>
+                </li>
+
+                <li>
+                    <a href="table.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> Responsive
+                        Tables</a>
+                </li>
+                <li>
+                    <a href="/searchVideo/main" class="waves-effect waves-dark"><i class="fa fa-edit"></i> 搜索视频 </a>
+                </li>
+
+
+                <li>
+                    <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">Second Level Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Link</a>
+                        </li>
+                        <li>
+                            <a href="#" class="waves-effect waves-dark">Second Level Link<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="empty.html" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Empty Page</a>
+                </li>
+            </ul>
+
         </div>
 
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                鬼畜分析
+            </h1>
+            {#            <ol class="breadcrumb">#}
+            {##}
+            {#                <li><a href="#">Home</a></li>#}
+            {#                <li><a href="#">鬼畜视频分析</a></li>#}
+            {#                <li class="active">Data</li>#}
+            {#            </ol>#}
+
+
+        </div>
+
+        <div id="page-inner">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="card-action">
+                        鬼畜视频时长分析
+                    </div>
+                    <div class="card-content">
+                        <div id="chart_guichu_length" style="width: 100%; height: 250px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="card-action">
+                        鬼畜视频投放时间分析
+                    </div>
+                    <div class="card-content">
+                        <div id="chart_guichu_submithour" class="main_table t_btn8"
+                             style="width:100%;height: 250px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="card-action">
+                        鬼畜视频词云图
+                    </div>
+                    <div class="card-content">
+                        <div id="chart_guichu_wordcloud" class="main_table t_btn8"
+                             style="width:100%;height: 250px"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- /. ROW  -->
+            {#            <footer ><p style="left:50%">                                    --------大数据A6--------</p></footer>#}
+        </div>
+        <!-- /. PAGE INNER  -->
     </div>
+    <!-- /. PAGE WRAPPER  -->
 </div>
+
 
 <script src="/static/assets/js/jquery-2.2.1.min.js"></script>
 <script src="/static/assets/js/bootstrap.min.js"></script>
@@ -112,31 +173,39 @@
 <script src="/static/assets/js/china.js"></script>
 <script src="/static/assets/js/tagcanvas.min.js"></script>
 <script src="/static/assets/js/area.js"></script>
-{#鬼畜视频时长css#}
 <script src="/static/assets/main/show_guichu_length.js"></script>
-{#鬼畜视频上传时间段css#}
+
 <script src="/static/assets/main/show_guichu_submithour.js"></script>
-{#鬼畜词云图css#}
-<script src="/static/assets/main/show_guichu_wordcloud.js"></script>
+
 <script src="/static/assets/js/echart3.js"></script>
 <script src="/static/assets/js/echarts-wordcloud.js"></script>
+<script src="/static/assets/main/show_guichu_wordcloud.js"></script>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+{#<script src="../static/assets/js/jquery-1.10.2.js"></script>#}
+
+<!-- Bootstrap Js -->
+<script src="../static/assets/js/bootstrap.min.js"></script>
+
+<script src="../static/assets/materialize/js/materialize.min.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="../static/assets/js/jquery.metisMenu.js"></script>
+<!-- Morris Chart Js -->
+{#<script src="../static/assets/js/morris/raphael-2.1.0.min.js"></script>#}
+{#<script src="../static/assets/js/morris/morris.js"></script>#}
 
 
-<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript">
-    (function () {
-        $(".tab_content").hide();
-        $("ul.tabs li:first").addClass("active").show();
-        $(".tab_content:first").show();
-        $("ul.tabs li").click(function () {
-            $("ul.tabs li").removeClass("active");
-            $(this).addClass("active");
-            $(".tab_content").hide();
-            var activeTab = $(this).find("a").attr("href");
-            $(activeTab).fadeIn();
-            return false;
-        });
-    })();
+<script src="../static/assets/js/easypiechart.js"></script>
+<script src="../static/assets/js/easypiechart-data.js"></script>
 
-</script>
+{#<script src="../static/assets/js/Lightweight-Chart/jquery.chart.js"></script>#}
+
+<!-- Custom Js -->
+{#<script src="../static/assets/js/custom-scripts.js"></script>#}
+
+
 </body>
+
+</html>

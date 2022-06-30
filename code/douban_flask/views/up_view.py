@@ -1,19 +1,17 @@
 # -*- coding:utf-8 -*-
 import json
 
-from flask import Blueprint, jsonify, request, render_template
+from flask import Blueprint,render_template
 
 from config import db
-from dbmodel.up import Up
-from dbmodel.up import UpTrendTotal
-from dbmodel.up import UpFansTrend
-from dbmodel.up import MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount
+from dbmodel.up import Up,UpTrendTotal,UpFansTrend,MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount
 
 up = Blueprint('up', __name__)
 
 @up.route('/main')
 def upAnalysis():
-    return render_template("up_main.html")
+    # return render_template("up_main.html")
+    return render_template("up-main-2.html")
 
 @up.route('/show100up')
 def show100up():
@@ -29,11 +27,12 @@ def show100up():
         dic['url']=item.url
         view_data.append(dic)
     [build_view_data(item) for item in data]
-    return render_template("show100up.html",ups=view_data)
+    return render_template("show100up-2.html", ups=view_data)
 
 @up.route('/trend')
 def showUpTrend():
-    return render_template("show_up_trend.html")
+    return render_template("show-up-trend-2.html")
+    # return render_template("show_up_trend.html")
 
 @up.route('/getUpTrend',methods=["GET"])
 def getUpTrend():
@@ -43,14 +42,16 @@ def getUpTrend():
         dic={}
         dic['name']=item.label
         dic['value']=item.number
-        view_data.append(dic)
+        if(dic['name']!='总视频数'):   # 去除总视频数
+            view_data.append(dic)
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)
 
 # 展示20个up主粉丝变化趋势页面
 @up.route('/fans')
 def showFans():
-    return render_template("show_up_fans.html")
+    # return render_template("show_up_fans.html")
+    return render_template("show-up-fans-2.html")
 
 # 得到二十个up主的近一个月的粉丝变化
 @up.route('/getUpFans')
@@ -123,16 +124,29 @@ def showMostPolpularUp():
     # 最受欢迎的up主的热门视频
     data2=db.session.query(MostPopularUpVideo).all()
     view_data2=[]
-    for i in range(10):
+    for i in range(21):
+        if i==9:
+            continue
         dic={}
         dic['picture_url']=data2[i].picture_url
         dic['title']=data2[i].title
         dic['introduction']=data2[i].introduction
         dic['url']=data2[i].url
         dic['views']=data2[i].views
-        dic['tags']=data2[i].tags.split(' ')
+        dic['danmus']=data2[i].danmus
+        dic['likes']=data2[i].likes
+        dic['coins']=data2[i].coins
+        dic['collections']=data2[i].collections
+        # dic['tags']=data2[i].tags.split(' ')
+        tag_list = data2[i].tags.split(' ')
+        tag_2 = []
+        for j in range(4):
+            tag_2.append(tag_list[j])
+        dic['tags'] = tag_2
         view_data2.append(dic)
-    return render_template("show_most_popular_up.html", ups=view_data,videos=view_data2)
+    # return render_template("show_most_popular_up.html", ups=view_data,videos=view_data2)
+    return render_template("show-most-popular-up-2.html", ups=view_data, videos=view_data2)
+
 
 # 得到画出最受欢迎的up主的视频的标签的统计数据
 @up.route('/getMostPopularUpVideosTags')
