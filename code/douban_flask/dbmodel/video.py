@@ -4,6 +4,7 @@ from config import db
 def make_vedio(partition):
     class Video(db.Model):
         __tablename__ = "video_" + partition + "_info"
+        __table_args__ = {'extend_existing': True}
         id = db.Column(db.INTEGER, primary_key=True)
         link = db.Column(db.String(100))
         img = db.Column(db.String(100))

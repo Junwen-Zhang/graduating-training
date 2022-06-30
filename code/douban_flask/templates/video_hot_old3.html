@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ data['partition'] }} hot100</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="/static/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="/static/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <!-- <link href="/static/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" /> -->
+    <!-- Custom Styles-->
+    <link href="/static/assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="/static/assets/js/Lightweight-Chart/cssCharts.css">
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/index.css"/>
+
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <!-- <script src="/static/assets/js/jquery-1.10.2.js"></script> -->
+    <script src="/static/assets/js/jquery-2.2.1.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+
+    <script src="/static/assets/materialize/js/materialize.min.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="/static/assets/js/jquery.metisMenu.js"></script>
+    <!-- Custom Js -->
+    <script src="/static/assets/js/custom-scripts.js"></script>
+
+    <!-- 我的echart的图 -->
+    <!-- <script src="/static/assets/js/bootstrap.min.js"></script> -->
+    <script src="/static/assets/js/common.js"></script>
+    <script src="/static/assets/js/echarts.min.js"></script>
+    <script src="/static/assets/js/dataTool.js"></script>
+    <script src="/static/assets/js/china.js"></script>
+    <script src="/static/assets/js/tagcanvas.min.js"></script>
+    <script src="/static/assets/js/area.js"></script>
+    <script src="/static/assets/js/echart3.js"></script>
+    <script src="/static/assets/js/echarts-wordcloud.js"></script>
+    <script src="/static/assets/js/index_zjw.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/assets/main/show_video_time.js" partition="{{data['partition']}}" videoid="1"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><i
+                        class="large material-icons">insert_chart</i>
+                    <strong>TRACK</strong></a>
+
+                <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown4"><i
+                            class="fa fa-envelope fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown3"><i
+                            class="fa fa-tasks fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown2"><i
+                            class="fa fa-bell fa-fw"></i> <i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i
+                            class="fa fa-user fa-fw"></i> <b>John Doe</b> <i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#"><i class="fa fa-user fa-fw"></i> My Profile</a>
+            </li>
+            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+            </li>
+            <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content w250">
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-comment fa-fw"></i> New Comment
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                        <span class="pull-right text-muted small">12 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-tasks fa-fw"></i> New Task
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                        <span class="pull-right text-muted small">4 min</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a class="text-center" href="#">
+                    <strong>See All Alerts</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <ul id="dropdown3" class="dropdown-content dropdown-tasks w250">
+            <li>
+                <a href="#">
+                    <div>
+                        <p>
+                            <strong>Task 1</strong>
+                            <span class="pull-right text-muted">60% Complete</span>
+                        </p>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="sr-only">60% Complete (success)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <p>
+                            <strong>Task 2</strong>
+                            <span class="pull-right text-muted">28% Complete</span>
+                        </p>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="28"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 28%">
+                                <span class="sr-only">28% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <p>
+                            <strong>Task 3</strong>
+                            <span class="pull-right text-muted">60% Complete</span>
+                        </p>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="sr-only">60% Complete (warning)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <p>
+                            <strong>Task 4</strong>
+                            <span class="pull-right text-muted">85% Complete</span>
+                        </p>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                <span class="sr-only">85% Complete (danger)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+        </ul>
+        <ul id="dropdown4" class="dropdown-content dropdown-tasks w250">
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>John Doe</strong>
+                        <span class="pull-right text-muted">
+                            <em>Today</em>
+                        </span>
+                    </div>
+                    <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>John Smith</strong>
+                        <span class="pull-right text-muted">
+                            <em>Yesterday</em>
+                        </span>
+                    </div>
+                    <div>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>John Smith</strong>
+                        <span class="pull-right text-muted">
+                            <em>Yesterday</em>
+                        </span>
+                    </div>
+                    <div>Lorem Ipsum has been the industry's standard dummy text ever since the...</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a class="text-center" href="#">
+                    <strong>Read All Messages</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="index.html" class="waves-effect waves-dark"><i class="fa fa-dashboard"></i>
+                            Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="ui-elements.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i> UI
+                            Elements</a>
+                    </li>
+                    <li>
+                        <a href="chart.html" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>
+                            Charts</a>
+                    </li>
+                    <li>
+                        <a href="tab-panel.html" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> Tabs &
+                            Panels</a>
+                    </li>
+
+                    <li>
+                        <a href="table.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> Responsive
+                            Tables</a>
+                    </li>
+                    <li>
+                        <a href="form.html" class="waves-effect waves-dark"><i class="fa fa-edit"></i> Forms </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>热门视频<span
+                                class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/video/showhot?partition=guichu">鬼畜区hot100</a>
+                            </li>
+                            <li>
+                                <a href="/video/showhot?partition=food">美食区hot100</a>
+                            </li>
+                            <li>
+                                <a href="/video/showhot?partition=music">音乐区hot100</a>
+                            </li>
+                            <li>
+                                <a href="/video/showhot?partition=movie">影视区hot100</a>
+                            </li>
+                            <li>
+                                <a href="/video/showhot?partition=game">游戏区hot100</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="empty.html"><i
+                                class="fa fa-fw fa-file"></i>
+                            Empty Page</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div class="header">
+                <h1 class="page-header">
+                    {{data['partition']}} hot100 <small> from bilibili </small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li class="active">{{data['partition']}}</li>
+                </ol>
+
+            </div>
+            <div id="page-inner">
+                <div class="page-block">
+                    <div class="page-1" style="display:block;">
+                        <div class="card">
+                            <div class="card-action"> {{data['videos'][0]['name']}} 1</div>
+                            <div class="card-content">
+                                <div class="card-content">
+
+                                    <div id="chart_video_time{{data['partition']}}1"
+                                        class="main_table t_btn8" style="height: 200px;position: relative;"></div>                                  
+                                    
+                                    <!-- <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header"><i class="material-icons">place</i>视频简介
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <p>{{data['videos'][0]['intro']}}</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><i
+                                                    class="material-icons">whatshot</i>视频浏览量时间分析
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <script type="text/javascript"
+                                                    src="/static/assets/main/show_video_time.js"
+                                                    partition="{{data['partition']}}"
+                                                    videoid="1"></script>
+                                                <div id="chart_video_time{{data['partition']}}1"
+                                                    class="main_table t_btn8"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><i
+                                                    class="material-icons">filter_drama</i>弹幕词云图
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <script type="text/javascript"
+                                                    src="/static/assets/main/show_video_wordcloud.js"
+                                                    partition="{{data['partition']}}"
+                                                    videoid="1"></script>
+                                                <div id="chart_video_wordcloud{{data['partition']}}1"
+                                                    class="main_table t_btn8"></div>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+
+                                </div>
+
+                                <div class="clearBoth"><br /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% for video in data["videos"][1:] %}
+                    <div class="page-{{video['id']}}" style="display: none;">
+                        <div class="card">
+                            <div class="card-action"> {{video['name']}} {{video['id']}}</div>
+                            <div class="card-content">
+                                <div class="card-content">
+
+                                    <div id="chart_video_time{{data['partition']}}{{video['id']}}"
+                                        class="main_table t_btn8" style="height: 200px;position: relative;"></div>
+
+                                    <!-- <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header"><i class="material-icons">place</i>视频简介
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <p>{{video['intro']}}</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><i
+                                                    class="material-icons">whatshot</i>视频浏览量时间分析
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <script type="text/javascript"
+                                                    src="/static/assets/main/show_video_time.js"
+                                                    partition="{{data['partition']}}"
+                                                    videoid="{{video['id']}}"></script>
+                                                <div id="chart_video_time{{data['partition']}}{{video['id']}}"
+                                                    class="main_table t_btn8"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header"><i
+                                                    class="material-icons">filter_drama</i>弹幕词云图
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <script type="text/javascript"
+                                                    src="/static/assets/main/show_video_wordcloud.js"
+                                                    partition="{{data['partition']}}"
+                                                    videoid="{{video['id']}}"></script>
+                                                <div id="chart_video_wordcloud{{data['partition']}}{{video['id']}}"
+                                                    class="main_table t_btn8"></div>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+
+                                </div>
+
+                                <div class="clearBoth"><br /></div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- 分页按钮 -->
+                <div class="page-icon">
+                    <button class="firstPage" onclick="first_click()" ><img src="/static/assets/img/page-icon/left-end.png"/></button>
+                    <button class="beforePage" onclick="prev_click()" ><img src="/static/assets/img/page-icon/page-left.png"/></button>
+                    <button>第<input id="currentPage" onchange="choose_page()" type="text" value="1"/>页</button>
+                    <button>/&nbsp;&nbsp;&nbsp;共<input id="totalPage" type="button" value="100" readonly="readonly">页</button>
+                    <button class="nextPage" onclick="next_click()"><img src="/static/assets/img/page-icon/page-right.png"/></button>
+                    <button class="lastPage" onclick="last_click()"><img src="/static/assets/img/page-icon/right-end.png"/></button>			
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
