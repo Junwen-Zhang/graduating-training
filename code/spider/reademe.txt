@@ -21,3 +21,9 @@
   ./Tools/getCID.py
  3.数据爬取调用
   spider.py
+
+汪泽鸿：
+1.热门视频url数据爬取
+  pubdate_url.py
+2.热门视频投放时间数据爬取
+  pubdate.py
