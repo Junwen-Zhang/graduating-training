@@ -31,9 +31,9 @@ def make_vediokeyword(partition):
 
 def make_vediotime(partition):
     class VideoTime(db.Model):
-        __tablename__ = "video_" + partition + "_dt"
+        __tablename__ = "video_" + partition + "_dm_dt"
         __table_args__ = {'extend_existing': True}
-        videoid = db.Column(db.INTEGER, primary_key=True)
-        grade = db.Column(db.String(20), primary_key=True)
-        count = db.Column(db.Float)
+        id = db.Column(db.INTEGER, primary_key=True)
+        grade = db.Column(db.DateTime, primary_key=True)
+        cnt = db.Column(db.INTEGER)
     return VideoTime
