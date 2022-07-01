@@ -48,6 +48,31 @@ class UpFansTrend(db.Model):
     origin = db.Column(db.INTEGER)
     result = db.Column(db.INTEGER)
 
+class UpTags(db.Model):
+    __tablename__ = "up_trend"
+    uid=db.Column(db.String(50),primary_key=True)
+    total=db.Column(db.INTEGER)
+    live=db.Column(db.INTEGER)
+    movie=db.Column(db.INTEGER)
+    technology=db.Column(db.INTEGER)
+    animal=db.Column(db.INTEGER)
+    animation=db.Column(db.INTEGER)
+    teleplay=db.Column(db.INTEGER)
+    music=db.Column(db.INTEGER)
+    knowledge=db.Column(db.INTEGER)
+    game=db.Column(db.INTEGER)
+    fashion=db.Column(db.INTEGER)
+    documentary=db.Column(db.INTEGER)
+    food=db.Column(db.INTEGER)
+    car=db.Column(db.INTEGER)
+    sport=db.Column(db.INTEGER)
+    entertainment=db.Column(db.INTEGER)
+    dance=db.Column(db.INTEGER)
+    guochuang=db.Column(db.INTEGER)
+    information=db.Column(db.INTEGER)
+    guichu=db.Column(db.INTEGER)
+
+
 # up创作标签分布（创作流行趋势）
 class UpTrendTotal(db.Model):
     __tablename__ = "up_trend_total"

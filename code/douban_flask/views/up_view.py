@@ -4,7 +4,7 @@ import json
 from flask import Blueprint,render_template
 
 from config import db
-from dbmodel.up import Up,UpTrendTotal,UpFansTrend,MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount
+from dbmodel.up import Up,UpTrendTotal,UpFansTrend,MostPopularUp,MostPopularUpVideo,MostPopularUpVideosTagsCount,UpTags
 
 up = Blueprint('up', __name__)
 
@@ -100,6 +100,171 @@ def getUpFans():
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)
 
+# 得到百大up的视频的tags
+@up.route('/getUpTags')
+def getUpTags():
+    data = db.session.query(UpTags).all()
+    view_data = []
+    def build_view_data(item):
+        dic={}
+        dic['uid']=item.uid
+        dic['data']=[]
+        dic2={}
+        dic2['name']='生活'
+        dic2['value']=item.live
+        if(dic2['value']==None):
+            dic2['value']=0
+        if(dic2['value']>=3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '影视'
+        dic2['value'] = item.movie
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '科技'
+        dic2['value'] = item.technology
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '动物圈'
+        dic2['value'] = item.animal
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '动画'
+        dic2['value'] = item.animation
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '电视剧'
+        dic2['value'] = item.teleplay
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '音乐'
+        dic2['value'] = item.music
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '知识'
+        dic2['value'] = item.knowledge
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '游戏'
+        dic2['value'] = item.game
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '时尚'
+        dic2['value'] = item.fashion
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '纪录片'
+        dic2['value'] = item.documentary
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '美食'
+        dic2['value'] = item.food
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '汽车'
+        dic2['value'] = item.car
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '运动'
+        dic2['value'] = item.sport
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '娱乐'
+        dic2['value'] = item.entertainment
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '舞蹈'
+        dic2['value'] = item.dance
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '国创'
+        dic2['value'] = item.guochuang
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '资讯'
+        dic2['value'] = item.information
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        dic2 = {}
+        dic2['name'] = '鬼畜'
+        dic2['value'] = item.guichu
+        if (dic2['value'] == None):
+            dic2['value'] = 0
+        if (dic2['value'] >= 3):
+            dic['data'].append(dic2)
+
+        view_data.append(dic)
+    [build_view_data(item) for item in data]
+    return json.dumps(view_data, ensure_ascii=False)
+
 # 展示最受欢迎up主的基本信息
 @up.route('/showMostPopularUp')
 def showMostPolpularUp():
@@ -161,7 +326,7 @@ def getMostPopularUpVideosTags():
             view_data.append(dic)
     [build_view_data(item) for item in data]
     return json.dumps(view_data, ensure_ascii=False)
-    
+
 
 
 

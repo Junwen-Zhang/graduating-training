@@ -795,5 +795,10 @@ element.style {
     background-color: rgba(137,164,150,0.54);
     filter: alpha(opacity=30);
 }
+.up-tags{
+    width: 100%;
+    height: 100%;
+    margin-left: 45px;
+}
 
 
