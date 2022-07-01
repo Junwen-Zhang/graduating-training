@@ -27,3 +27,7 @@
   pubdate_url.py
 2.热门视频投放时间数据爬取
   pubdate.py
+
+杨雅馨：
+1.鬼畜相关数据爬取
+  guichu_spider.py
