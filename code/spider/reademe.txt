@@ -1,3 +1,10 @@
 爬虫源代码
-spider_videoComment.py  张倩
-spider_videoInfo.py  张倩
+
+张倩：
+1.番剧数据爬取
+  FirstPage.py
+  secondPage.py
+  spider.py
+2.视频数据爬取（中间代码）
+  spider_videoComment.py  
+  spider_videoInfo.py  
