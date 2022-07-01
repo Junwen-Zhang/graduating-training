@@ -364,14 +364,14 @@
 
     </nav>
     <div id="page-wrapper">
-        {%var trans={"guichu":"鬼畜",""}%}
+        
         <div class="header">
             <h1 class="page-header">
-                {{ data['partition'] }} Top100
+                {{ data['trans'][data['partition']] }} Top100
             </h1>
             <ol class="breadcrumb">
                 <li class="active">热门视频</li>
-                <li class="active">{{ data['partition'] }}</li>
+                <li class="active">{{ data['trans'][data['partition']] }}</li>
             </ol>
 
         </div>

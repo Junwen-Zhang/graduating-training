@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d2deb13-46e9-4100-a6a3-228b633aa065" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/douban_flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/douban_flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/video_hot_old1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/video_hot_old3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/animation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/animation_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkAnalysis/linkAnalys.py" beforeDir="false" afterPath="$PROJECT_DIR$/LinkAnalysis/linkAnalys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchVideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchVideo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/video_hot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/video_hot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/searchVideo_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchVideo_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/video_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/video_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RunManager">
@@ -91,13 +89,36 @@
       <option name="presentableId" value="Default" />
       <updated>1656551778807</updated>
       <workItem from="1656551780813" duration="1963000" />
+      <workItem from="1656659006475" duration="3380000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/app_py$app.coverage" NAME="app Coverage Results" MODIFIED="1656553675283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app_py$app.coverage" NAME="app Coverage Results" MODIFIED="1656662203281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

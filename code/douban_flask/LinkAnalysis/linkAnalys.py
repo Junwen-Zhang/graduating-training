@@ -168,10 +168,11 @@ class LinkAnls():
 
     def getName(self,soup):
         findVideoName = re.compile(r'<h1.*title="(.*?)"', re.S)  # 名字
+        findVideoName2 = re.compile(r'<h1.*>(.*?)</h1>', re.S)  # 名字
         title_s = soup.find_all(name="h1", attrs={"class": "video-title tit"})
         # print('title_s: ',title_s)
         if len(title_s) != 0:
-            self.video_name = re.findall(findVideoName, str(title_s))[0]
+            self.video_name = re.findall(findVideoName2, str(title_s))[0]
         return self.video_name
 
     def getTags(self,soup):

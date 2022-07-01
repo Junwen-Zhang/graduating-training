@@ -22,6 +22,7 @@ def commentmain():
     la.getData()
     DanmakuText = la.video_DanmakuText
     Danmaku = DanmakuText.split('\n')
+    print(la.danmaku_keywords)
     keyword = [la.danmaku_keywords[0][0], la.danmaku_keywords[1][0], la.danmaku_keywords[2][0]]
     view_data = []
 

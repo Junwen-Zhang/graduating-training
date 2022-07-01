@@ -58,6 +58,7 @@ def show100video():
     data["videos"] = videos
     # data["partition"] = transform2cn[partition] + "分区"
     data["partition"] = partition
+    data['trans'] = {"guichu":"鬼畜","food":"美食","movie":"影视","music":"音乐","game":"游戏"};
     # print("from python : ",data)
     return render_template("video_hot.html", data=data)
 

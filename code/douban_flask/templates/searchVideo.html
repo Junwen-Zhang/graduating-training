@@ -19,39 +19,47 @@
     <link rel="stylesheet" href="../static/assets/js/Lightweight-Chart/cssCharts.css">
 
     <style>
+    {#    input{#}
+    {#    width: 260px;#}
+    {#    border: 1px solid #e2e2e2;#}
+    {#    height: 30px;#}
+    {#    float: left;#}
+    {#    padding:0 0 0 35px;#}
+    {#}#}
         .search-box {
             font-family: FontAwesome;
             position: absolute;
-            top: 20%;
-            left: 40%;
+            top: 25%;
+            left: 45%;
             transform: translate(-50%, -50%);
             background: #ffffff;
-            height: 40px;
+            height: 35px;
             border: 10px;
             border-radius: 40px;
             padding: 10px;
             opacity: 0;
             transition-delay: 99999999s;
             transition-duration: 1s;
+            width:400px;
         }
 
 
-        .search-box:hover > .search-btn {
-            color: white;
-            background: black;
-        }
+        {#.search-box:hover > .search-btn {#}
+        {#    color: white;#}
+        {#    background: black;#}
+        {#}#}
 
         .search-btn {
             position:absolute;
-            margin-left: 500px;
+            margin-left: 400px;
             top: 1%;
             transition: 0.5s;
             font-family: FontAwesome;
             font-size: 25px;
             color: black;
             float: right;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             border: 10px;
             border-radius: 50%;
             background: #ffffff;
@@ -62,16 +70,21 @@
         }
 
         .search-txt {
+            top:5%;
+            left:20%;
             border: none;
+            border-bottom: none;
+            border-bottom-width: 0px;
+            border-bottom-style: solid;
             background: none;
             outline: none;
             float: left;
             padding: 0;
             color: rgb(51, 159, 150);
-            font-size: 16px;
+            font-size: 30px;
             transition: 0.6s;
-            line-height: 50px;
-            width: 0px;
+            line-height: 80px;
+            width: 100%;
         }
 
 
@@ -354,16 +367,15 @@
 
         </nav>
     <!-- /. NAV SIDE  -->
-    <div id="page-wrapper" style="background-image:linear-gradient(to top, #4568DC, #B06AB3); overflow:hidden">
+    <div id="page-wrapper" style="background-image:url(/static/assets/img/background4.jpg);background-repeat:no-repeat;background-attachment: fixed;background-size: 100%;">
         <div class="header">
             <h1 class="page-header">
                 视频搜索
             </h1>
         </div>
         <div id="page-inner">
-                <div class="col-md-6 search-box">
-                    <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
-                    <input class="search-btn" type='button' id='btn' value='&#xf002'/>
+                <div class="search-box">
+                    <input class="search-txt" type="text" id="inp" placeholder="请输入视频链接"><input class="search-btn" type='button' id='btn' value='&#xf002'/>
                 </div>
         </div>
     </div>
