@@ -357,7 +357,7 @@ font-size: 14px;
     MENU STYLES    
 ------------------------------------------------*/
 div#sideNav:hover {
-    color: #30cc7b;
+    color: #FB7299;
 }
 .user-image {
     margin: 25px auto;
@@ -370,9 +370,9 @@ max-width:170px;
 .top-navbar{
 margin:0px;
 }
-.top-navbar .navbar-brand {color: #fff;width: 260px;text-align: left;height: 60px;font-size: 24px;font-weight: 700;/* text-transform: uppercase; */line-height: 30px;background: #30cc7b;}
+.top-navbar .navbar-brand {color: #fff;width: 260px;text-align: left;height: 60px;font-size: 24px;font-weight: 700;/* text-transform: uppercase; */line-height: 30px;background: #FB7299;}
 .navbar-brand b{
-color: #4BD28C;
+color: #FB7299;
 }
 .top-navbar .nav > li {
 position: relative;
@@ -414,7 +414,7 @@ padding-top: 4px;
     background-color: #233342 !important;
     color: #fff !important;
 }
-.active-menu i{color: #30cc7b !important;}
+.active-menu i{color: #FB7299 !important;}
 .arrow {
     float: right;
     margin-top: 8px;
@@ -475,7 +475,7 @@ ul.nav.nav-second-level.collapse.in {background: #0f2a3f;}
 	border-bottom:none;
 }
 .top-navbar .nav > li > a > i {margin-right: 0;}
-.top-navbar .navbar-brand:hover {color: #FFFFFF;background-color: #2ec376;}
+.top-navbar .navbar-brand:hover {color: #FFFFFF;background-color: #e94d9e;}
 .dropdown-user li {
 margin: 8px 0;
 }
@@ -486,10 +486,10 @@ border:0px solid black;
 .navbar-header {
     background: transparent;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #f7f7f7;}
-.navbar-default .navbar-toggle {border-color: #2ec376;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #FB7299;}
+.navbar-default .navbar-toggle {border-color: #FB7299;}
 
-.navbar-default .navbar-toggle .icon-bar {background-color: #2ec376;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #FB7299;}
 .nav > li > a > i {
     margin-right:10px;
     color: #848484;
@@ -792,8 +792,7 @@ element.style {
 }
 /*背景局部模糊*/
 .vague-background{
-    background-color: rgba(137,164,150,0.54);
-    filter: alpha(opacity=30);
+    background-color: rgba(251,114,153,0.3);
 }
 .up-tags{
     width: 100%;

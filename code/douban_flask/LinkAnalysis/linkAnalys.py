@@ -111,8 +111,8 @@ class LinkAnls():
         #print("keywords", self.danmaku_keywords)
 
         self.getTime(soup)
-        self.getDanmaku()
-        self.Find_keywords()
+        # self.getDanmaku()
+        # self.Find_keywords()
         self.getImg(soup)
         self.getName(soup)
         self.getTags(soup)
@@ -129,7 +129,7 @@ class LinkAnls():
         #print(self.video_DanmakuText)
         #print("video_DanmakuDTC",self.video_DanmakuDTC)
         #print("keywords", self.danmaku_keywords)
-        '''
+
         print("video_Time",self.video_Time)
         print("video_DanmakuDTC",self.video_DanmakuDTC)
         print("keywords",self.danmaku_keywords)
@@ -144,7 +144,7 @@ class LinkAnls():
         print("trans",self.trans)
         print("Intro",self.Intro)
         print("Comment",self.video_comment)
-        '''
+
 
 
 
