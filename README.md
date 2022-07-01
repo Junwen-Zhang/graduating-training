@@ -22,5 +22,13 @@ git pull (拉去最新的版本)
 -data-database(用于存放数据库文件)
 ```
 
+### 代码运行说明
 
+1、配置环境：包括mysql环境、flask包、爬虫相关的包。
+
+2、建立数据库：需要用data-database文件夹下的Bilibili.sql文件初始化数据库
+
+3、代码配置：需要在code/Bilibili目录下的config.py中设置自己的数据库链接、用户名和密码。
+
+4、运行项目：点击运行code/Bilibili目录下的app.py文件即可。
 
