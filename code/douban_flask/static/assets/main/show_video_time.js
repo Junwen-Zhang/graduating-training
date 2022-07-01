@@ -1,11 +1,7 @@
 (function (func) {
-    
     var script=document.getElementsByTagName("script");
-    // console.log("1 script:",script);
     script=script[script.length-1]; 
     var partition=script.getAttribute("partition");
-    // console.log("1 script:",script);
-    // console.log("1 partition:",partition);
 
     $.ajax({
         url: "/video/timeAnalyse?partition="+partition,
@@ -17,19 +13,12 @@
     });
 })(function (data) {
     var script=document.getElementsByTagName("script");
-    // console.log("2 script:",script);
     script=script[script.length-2];
     var partition=script.getAttribute("partition");
-    // console.log("2 script:",script);
-    // console.log("2 partition:",partition);
 
     for(var i=1;i<=100;i++){
-        console.log('chart_video_time'+partition+String(i));
         var myChart = echarts.init(document.getElementById('chart_video_time'+partition+String(i)), 'infographic');
-        // console.log("@@@");
-        // prettier-ignore
         let dataAxis = data[i]['x'];
-        // prettier-ignore
         let dataY = data[i]['y'];
         let yMax = 500;
         let dataShadow = [];
@@ -40,7 +29,6 @@
             title: {
                 left:'36%',
                 text: '视频浏览量变化趋势',
-                // subtext: 'Feature Sample: Gradient Color, Shadow, Click Zoom'
             },
             xAxis: {
                 data: dataAxis,
@@ -117,7 +105,6 @@
         window.addEventListener("resize", function () {
             myChart.resize();
         });
-        // console.log("end!!!");
     }
 
 });

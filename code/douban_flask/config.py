@@ -12,13 +12,13 @@ app = Flask(__name__)
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.66.121:3306/bilibili"
 
 # 章俊文
-# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@127.0.0.1:3306/bilibili"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@127.0.0.1:3306/blbl"
 
 # 杨雅馨
 # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.80.150:3306/guichu"
 
 # 秦霄潇
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@localhost/bilibili"
+# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@localhost/bilibili"
 
 # 张倩
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:12345678@192.168.80.155:3306/bilibili"

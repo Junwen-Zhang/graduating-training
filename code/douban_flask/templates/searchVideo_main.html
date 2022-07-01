@@ -492,9 +492,8 @@ element.style {
                 视频分析
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">search_video</a></li>
-                <li class="active">Data</li>
+                <li><a href="#">视频搜索</a></li>
+                <li class="active">搜索结果</li>
             </ol>
         </div>
         <div id="page-inner">
@@ -690,16 +689,19 @@ element.style {
                                 <div id="container" class="comment_show">
                                     {% for d in range(3) %}
                                     <div class="alert alert-info">
-                                        <b>{{datad[d+0]['text']}}</b>
+                                        <b>{{datad[d + 0]['text']}}</b>
                                     </div>
+
                                     <div class="alert alert-success">
-                                        <b>{{datad[d+1]['text']}}</b>
+                                        <b>{{datad[d + 1]['text']}}</b>
                                     </div>
-                                    <div class="alert alert-warning">
-                                        <b>{{datad[d+2]['text']}}</b>
+
+                                    <div class="alert alert-info">
+                                        <b>{{datad[d + 2]['text']}}</b>
                                     </div>
+
                                     <div class="alert alert-danger">
-                                        <b>{{datad[d+3]['text']}}</b>
+                                        <b>{{datad[d + 3]['text']}}</b>
                                     </div>
                                     {% endfor %}
                                 </div>

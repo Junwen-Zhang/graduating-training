@@ -10,9 +10,7 @@
 })(function (data) {
     var myChart = echarts.init(document.getElementById('chart_guichu_submithour'), 'infographic');
 
-    // prettier-ignore
     let dataAxis = data['x'];
-    // prettier-ignore
     let dataY = data['y'];
     let yMax = 500;
     let dataShadow = [];
@@ -82,10 +80,8 @@
             }
         ]
     };
-    // Enable data zoom when user click bar.
     const zoomSize = 6;
     myChart.on('click', function (params) {
-        console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
         myChart.dispatchAction({
             type: 'dataZoom',
             startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],

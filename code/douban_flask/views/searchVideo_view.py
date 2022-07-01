@@ -23,7 +23,9 @@ def commentmain():
     DanmakuText = la.video_DanmakuText
     Danmaku = DanmakuText.split('\n')
     print(la.danmaku_keywords)
-    keyword = [la.danmaku_keywords[0][0], la.danmaku_keywords[1][0], la.danmaku_keywords[2][0]]
+    keyword = [la.danmaku_keywords[0][0], la.danmaku_keywords[1][0], la.danmaku_keywords[2][0],la.danmaku_keywords[3][0]
+               ,la.danmaku_keywords[4][0],la.danmaku_keywords[5][0],la.danmaku_keywords[6][0],la.danmaku_keywords[7][0],
+               la.danmaku_keywords[8][0],la.danmaku_keywords[9][0],la.danmaku_keywords[10][0],la.danmaku_keywords[11][0]]
     view_data = []
 
     def build_view_data(item):
@@ -31,8 +33,9 @@ def commentmain():
         for i in keyword:
             if i in item:
                 a['text'] = item
-                view_data.append(a)
-                return 1
+                if a not in view_data:
+                    view_data.append(a)
+                    return 1
         return 0
 
     a = 0
@@ -48,6 +51,7 @@ def commentmain():
     datalist["comment"] = la.video_comment[0:12]
     # datalist["show"] =
     # print('comment',comment)
+    print(view_data)
     return render_template("searchVideo_main.html",data=datalist,datad=view_data)
 
 @search.route('/show',methods=['GET'])

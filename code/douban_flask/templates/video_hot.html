@@ -382,12 +382,12 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="card" style="border-radius: 2em;">
                                 <div class="card-action"
-                                     style="border-bottom:1.5px solid rgb(240, 235, 229);border-radius: 1em;height: 250px;">
+                                     style="border-bottom:1.5px solid rgb(240, 235, 229);border-radius: 1em;height: 200px;">
                                     <div style="display: inline-block; float:left">
                                         <img src="{{ data['videos'][2*i+j]['picture_url'] }}" height="130px" style="float:left;border-radius: 0.5em;">
                                     </div>
 
-                                    <div style="display: inline-block; margin-inline-start: 20px;margin-top: 0px;">
+                                    <div style="display: inline-block; margin-inline-start: 5px;margin-top: 0px;">
 
                                         <div style="margin: 10px;">
                                             <div style="display: inline-block;float: left;">
@@ -395,7 +395,7 @@
                                                     <img src="/static/assets/img/TV.png" width="25px" height="25px">
                                                 </a>
                                             </div>
-                                            <div class="text" style="display: inline-block; width: 170px; overflow: hidden;">{{ data['videos'][2*i+j]['name'] }}
+                                            <div class="text" style="display: inline-block; width: 180px; overflow: hidden;">{{ data['videos'][2*i+j]['name'] }}
                                             </div>
                                         </div>
                                         <div style="margin: 10px;">
@@ -442,7 +442,7 @@
 
                                 </div>
                                 <div class="card-content">
-                                    <div class="alert alert-success" style="height: 80px;">
+                                    <div class="alert alert-success" style="height: 120px;overflow: scroll;">
 									<strong>视频简介： </strong>{{ data['videos'][2*i+j]['intro'] }}
 								    </div>
                                     <div id="chart_video_time{{ data['partition'] }}{{ data['videos'][2*i+j]['id'] }}"

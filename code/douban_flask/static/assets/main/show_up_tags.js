@@ -14,6 +14,7 @@
         var myChart = echarts.init(document.getElementById('chart_up_tags'+data[i]['uid']), 'infographic');
         delete data[i].uid;
         var option = {
+            // title:"视频标签统计",
             tooltip: {
                 trigger: 'item'
             },

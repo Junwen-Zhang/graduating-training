@@ -3,7 +3,6 @@
     script=script[script.length-1];
     var partition=script.getAttribute("partition");
     var videoid=script.getAttribute("videoid");
-    // console.log("1 partition:",partition);
     
     $.ajax({
         url: "/video/keywordAnalyse?partition="+partition,
@@ -13,12 +12,10 @@
             func(data);
         }
     });
-})(function (data) { 
-    // console.log("222 ",data);
+})(function (data) {
     var script=document.getElementsByTagName("script");
     script=script[script.length-2];
     var partition=script.getAttribute("partition");
-    // console.log("2 partition:",partition);
 
     for(var i=1;i<=100;i++){
         var myChart = echarts3.init(document.getElementById('chart_video_wordcloud'+partition+String(i)), 'infographic');
